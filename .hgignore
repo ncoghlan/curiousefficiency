@@ -1,0 +1,6 @@
+syntax: glob
+
+site/output
+site/cache
+.doit.db
+*.py[co]
