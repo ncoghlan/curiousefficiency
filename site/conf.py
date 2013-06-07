@@ -10,15 +10,20 @@ import time
 
 # Data about this site
 BLOG_AUTHOR = "Nick Coghlan"
-BLOG_TITLE = "Boredom &amp; Laziness"
+BLOG_TITLE = "Curious Efficiency"
 # This is the main URL for your site. It will be used
 # in a prominent link
-SITE_URL = "http://www.boredomandlaziness.org"
+SITE_URL = "http://www.curiousefficiency.org"
 # This is the URL where nikola's output will be deployed.
 # If not set, defaults to SITE_URL
-# BASE_URL = "http://www.boredomandlaziness.org"
-BLOG_EMAIL = "noreply@blogger.com"
-BLOG_DESCRIPTION = ""
+# BASE_URL = "http://www.curiousefficiency.org"
+BLOG_EMAIL = "ncoghlan@gmail.com"
+BLOG_DESCRIPTION = """\
+Efficiency (a virtue) is the child of laziness and greed (both vices), while
+much of our economic activity is devoted to preventing boredom in the idle
+time created by increases in efficiency. To be human is to be a strange
+creature indeed :)
+"""
 
 # Nikola is multilingual!
 #
@@ -170,7 +175,7 @@ post_compilers = {
 # "rsync -rav output/* joe@my.site:/srv/www/site"
 # And then do a backup, or ping pingomatic.
 # To do manual deployment, set it to []
-# DEPLOY_COMMANDS = []
+DEPLOY_COMMANDS = ["rsync -rav output/* ~/devel/ncoghlan.github.io"]
 
 # Where the output site should be located
 # If you don't use an absolute path, it will be considered as relative
@@ -228,7 +233,7 @@ post_compilers = {
 # INDEXES_PAGES = ""  # If this is empty, the default is 'old posts page %d' translated
 
 # Name of the theme to use.
-# THEME = 'site'
+THEME = 'site_slate'
 
 # Color scheme to be used for code blocks. If your theme provide "assets/css/code.css" this
 # is ignored.
@@ -268,16 +273,21 @@ post_compilers = {
 
 # A small copyright notice for the page footer (in HTML).
 # Default is ''
-CONTENT_FOOTER = 'Contents &copy; {date} <a href="mailto:{email}">{author}</a> - Powered by <a href="http://nikola.ralsina.com.ar">Nikola</a>'
-CONTENT_FOOTER = CONTENT_FOOTER.format(email=BLOG_EMAIL,
-                                       author=BLOG_AUTHOR,
-                                       date=time.gmtime().tm_year)
+COPYRIGHT_NOTICE = 'Contents &copy; {date} <a href="mailto:{email}">{author}</a>'
+COPYRIGHT_NOTICE = COPYRIGHT_NOTICE.format(email=BLOG_EMAIL,
+                                           author=BLOG_AUTHOR,
+                                           date=time.gmtime().tm_year)
+CC0_LICENSE = '<a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a>, republish as you wish.'
+POWERED_BY_NIKOLA = 'Powered by <a href="http://nikola.ralsina.com.ar">Nikola</a>'
+CONTENT_FOOTER = '{} - {} - {}'.format(COPYRIGHT_NOTICE,
+                                       CC0_LICENSE,
+                                       POWERED_BY_NIKOLA)
 
 # To enable comments via Disqus, you need to create a forum at
 # http://disqus.com, and set DISQUS_FORUM to the short name you selected.
 # If you want to disable comments, set it to False.
 # Default is "nikolademo", used by the demo sites
-# DISQUS_FORUM = "nikolademo"
+DISQUS_FORUM = "boredomandlaziness"
 
 # Create index.html for story folders?
 # STORY_INDEX = False
@@ -312,7 +322,7 @@ CONTENT_FOOTER = CONTENT_FOOTER.format(email=BLOG_EMAIL,
 
 # Enable Addthis social buttons?
 # Defaults to true
-# ADD_THIS_BUTTONS = True
+ADD_THIS_BUTTONS = False
 
 # Modify the number of Post per Index Page
 # Defaults to 10
@@ -324,7 +334,7 @@ CONTENT_FOOTER = CONTENT_FOOTER.format(email=BLOG_EMAIL,
 # RSS_LINK = None
 
 # Show only teasers in the RSS feed? Default to True
-# RSS_TEASERS = True
+RSS_TEASERS = False
 
 # A search form to search this site, for the sidebar. You can use a google
 # custom search (http://www.google.com/cse/)
