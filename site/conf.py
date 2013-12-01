@@ -366,7 +366,7 @@ DEPLOY_COMMANDS = ["rsync -rav output/* ~/devel/ncoghlan.github.io"]
 # INDEXES_PAGES = ""  # If this is empty, the default is 'old posts page %d' translated
 
 # Name of the theme to use.
-THEME = 'site_slate'
+# THEME = 'bootstrap'
 
 # Color scheme to be used for code blocks. If your theme provide "assets/css/code.css" this
 # is ignored.
@@ -420,7 +420,7 @@ CONTENT_FOOTER = '{} - {} - {}'.format(COPYRIGHT_NOTICE,
 # http://disqus.com, and set DISQUS_FORUM to the short name you selected.
 # If you want to disable comments, set it to False.
 # Default is "nikolademo", used by the demo sites
-DISQUS_FORUM = "boredomandlaziness"
+COMMENT_SYSTEM_ID = "boredomandlaziness"
 
 # Create index.html for story folders?
 # STORY_INDEX = False
