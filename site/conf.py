@@ -16,7 +16,7 @@ BLOG_TITLE = "Curious Efficiency"
 SITE_URL = "http://www.curiousefficiency.org"
 # This is the URL where nikola's output will be deployed.
 # If not set, defaults to SITE_URL
-# BASE_URL = "http://www.curiousefficiency.org"
+BASE_URL = SITE_URL + "/"
 BLOG_EMAIL = "ncoghlan@gmail.com"
 BLOG_DESCRIPTION = """\
 Efficiency (a virtue) is the child of laziness and greed (both vices), while
@@ -58,7 +58,7 @@ TRANSLATIONS = {
 
 # Links for the sidebar / navigation bar.
 # You should provide a key-value pair for each used language.
-SIDEBAR_LINKS = {
+NAVIGATION_LINKS = {
     DEFAULT_LANG: (
         ('/archive.html', 'Archives'),
         ('/categories/index.html', 'Tags'),
@@ -72,12 +72,13 @@ SIDEBAR_LINKS = {
 ##############################################
 
 
-# post_pages contains (wildcard, destination, template, use_in_feed) tuples.
+# POSTS and PAGES contains (wildcard, destination, template) tuples.
 #
 # The wildcard is used to generate a list of reSt source files
 # (whatever/thing.txt).
-# That fragment must have an associated metadata file (whatever/thing.meta),
-# and opcionally translated files (example for spanish, with code "es"):
+#
+# That fragment could have an associated metadata file (whatever/thing.meta),
+# and optionally translated files (example for spanish, with code "es"):
 #     whatever/thing.txt.es and whatever/thing.meta.es
 #
 # From those files, a set of HTML fragment files will be generated:
@@ -87,17 +88,21 @@ SIDEBAR_LINKS = {
 # pages, which will be placed at
 # output / TRANSLATIONS[lang] / destination / pagename.html
 #
-# where "pagename" is specified in the metadata file.
+# where "pagename" is the "slug" specified in the metadata file.
 #
-# if use_in_feed is True, then those posts will be added to the site's
-# rss feeds.
+# The difference between POSTS and PAGES is that POSTS are added
+# to feeds and are considered part of a blog, while PAGES are
+# just independent HTML pages.
 #
 
-post_pages = (
-            ("posts/*.html", "posts", "post.tmpl", True),
-            ("stories/*.html", "stories", "story.tmpl", False),
-        )
-
+POSTS = (
+    ("posts/*.txt", "posts", "post.tmpl"),
+    ("posts/*.rst", "posts", "post.tmpl"),
+)
+PAGES = (
+    ("stories/*.txt", "stories", "story.tmpl"),
+    ("stories/*.rst", "stories", "story.tmpl"),
+)
 # One or more folders containing files to be copied as-is into the output.
 # The format is a dictionary of "source" "relative destination".
 # Default is:
@@ -111,7 +116,7 @@ post_pages = (
 # 'rest' is reStructuredText
 # 'markdown' is MarkDown
 # 'html' assumes the file is html and just copies it
-post_compilers = {
+COMPILERS = {
         "rest": ('.txt', '.rst'),
         "markdown": ('.md', '.mdown', '.markdown', '.wp'),
         "html": ('.html', '.htm')
@@ -453,9 +458,9 @@ COMMENT_SYSTEM_ID = "boredomandlaziness"
 #</script>
 #"""
 
-# Enable Addthis social buttons?
+# Enable social buttons?
 # Defaults to true
-ADD_THIS_BUTTONS = False
+SOCIAL_BUTTONS_CODE = False
 
 # Modify the number of Post per Index Page
 # Defaults to 10
