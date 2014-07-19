@@ -2,5 +2,6 @@ syntax: glob
 
 site/output
 site/cache
+site/Guardfile
 .doit.db
 *.py[co]
