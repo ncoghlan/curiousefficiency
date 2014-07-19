@@ -60,9 +60,11 @@ TRANSLATIONS = {
 # You should provide a key-value pair for each used language.
 NAVIGATION_LINKS = {
     DEFAULT_LANG: (
+        ('/pages/about.html', 'About'),
         ('/archive.html', 'Archives'),
         ('/categories/index.html', 'Tags'),
         ('/rss.xml', 'RSS'),
+        ('http://python-notes.curiousefficiency.org', 'Python Notes')
     ),
 }
 
@@ -98,16 +100,19 @@ NAVIGATION_LINKS = {
 POSTS = (
     ("posts/*.txt", "posts", "post.tmpl"),
     ("posts/*.rst", "posts", "post.tmpl"),
+    ("posts/*.md", "posts", "post.tmpl"),
+    ("posts/*.html", "posts", "post.tmpl"),
 )
 PAGES = (
-    ("stories/*.txt", "stories", "story.tmpl"),
-    ("stories/*.rst", "stories", "story.tmpl"),
+    ("pages/*.txt", "pages", "story.tmpl"),
+    ("pages/*.rst", "pages", "story.tmpl"),
 )
 # One or more folders containing files to be copied as-is into the output.
 # The format is a dictionary of "source" "relative destination".
 # Default is:
 # FILES_FOLDERS = {'files': '' }
 # Which means copy 'files' into 'output'
+FILES_FOLDERS = {'files': 'files' }
 
 # A mapping of languages to file-extensions that represent that language.
 # Feel free to add or delete extensions to any list, but don't add any new
