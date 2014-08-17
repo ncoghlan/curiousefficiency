@@ -1,7 +1,7 @@
 .. title: Why Python 4.0 won't be like Python 3.0
 .. slug: python-4000
 .. date: 2014-08-17 05:30:55 UTC
-.. tags: 
+.. tags: python
 .. link: 
 .. description: 
 .. type: text
