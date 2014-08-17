@@ -121,7 +121,7 @@ and returning values for further processing:
 ```python
 >>> def new_displayhook(obj):
 ...     if obj is not None:
-...         print("-> {}".format(obj))
+...         print("-> {!r}".format(obj))
 ...
 >>> import sys
 >>> sys.displayhook = new_displayhook
@@ -136,3 +136,41 @@ learning to use functions effectively, and tweaking the display of results
 this way may help make the difference more obvious.
 
 
+# Addendum: IPython (including IPython Notebook)
+
+The initial examples above focused on the standard CPython runtime, include
+the default interactive interpreter. The IPython interactive interpreter,
+including the IPython Notebook, has a couple of interesting differences in
+behaviour that are relevant to the above comments.
+
+Firstly, it *does* display return values and printed values differently,
+prefacing *results* with an output reference number:
+
+```python
+In [1]: print 10
+10
+
+In [2]: 10
+Out[2]: 10
+```
+
+Secondly, it has an optional "autocall" feature that allows a user to tell
+IPython to automatically add the missing parentheses to a function call if
+the user leaves them out:
+
+```sh
+$ ipython3 --autocall=1 -c "print 10"
+-> print(10)
+10
+```
+
+This is a general purpose feature that allows users to make their IPython
+sessions behave more like languages that don't have first class functions
+(most notably, IPython's autocall feature closely resembles MATLAB's
+"command syntax" notation for calling functions).
+
+It also has the side effect that users that use IPython, have autocall
+enabled, and don't use any of the more esoteric quirks of the Python 2
+`print` statement (like stream redirection or suppressing the trailing
+newline) may not even notice that `print` became an ordinary builtin in
+Python 3.
