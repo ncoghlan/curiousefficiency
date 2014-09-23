@@ -1,7 +1,7 @@
 .. title: Seven billion seconds per second
 .. slug: seven-billion-seconds-per-second
 .. date: 2014-09-23 07:35:39 UTC
-.. tags: philosophy politics python science
+.. tags: philosophy,politics,python,science
 .. link: 
 .. description: 
 .. type: text
