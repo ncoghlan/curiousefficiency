@@ -77,4 +77,5 @@ humans*, rather than because of specific things they have done, or specific
 roles they take up?
 
 I honestly don't know, but it seems worthwhile to try. I certainly find it
-hard to conceive of a better possible way to spend my time :)
+hard to conceive of a better possible way to spend my own meagre slice of
+those seven billion seconds per second :)
