@@ -13,7 +13,7 @@ up once more during the plenary Q&A session with Linus Torvalds, Andrew Tridgell
 Bdale Garbee and Rusty Russell.
 
 I was there for that session, and found that Linus's response appeared to
-betray a fundamental misunderstanding of both the motives of many of the folks
+betray a fundamental misunderstanding of the motives of many of the folks
 pushing for increased diversity in the open source community, as well as a
 lack of awareness of the terrible situations that can arise when leaders in a
 community regularly demonstrate abusive behaviour without suffering any
@@ -44,7 +44,7 @@ an open source community would be fundamentally different in that regard. The
 transition to a new leadership structure might be a little messy, but the
 community would almost certainly figure it out.
 
-Howver, there's still a lot of scope for Linus to influence *how fast* Linux
+However, there's still a lot of scope for Linus to influence *how fast* Linux
 grows, and on that front his words and actions suggest that he considers
 being careless in his speech, without regard for the collateral damage
 his verbal broadsides may be doing to his cause, more important than
@@ -206,7 +206,7 @@ know are terrible - they're fun to prepare, fun to give, and it's quite
 entertaining seeing the horrified reactions when people realise I'm not
 kidding when I say all software is terrible and computers don't actually
 work, they just fake it fairly well through an ongoing series of horrible
-hacks built atop other horrible hacks. I'm not surprised the internet
+hacks built atop other horrible hacks. I'm not surprised the Internet
 breaks sometimes - given the decades of accumulated legacy hardware and
 software we're building on and working around, it's thoroughly astonishing
 that anything technology related ever works at all)
