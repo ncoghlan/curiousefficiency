@@ -297,3 +297,5 @@ the quality of our thinking. Assuming we have attained meritocracy (aka "the
 most effective collaborative environment possible") is sheer foolishness,
 when a wide array of systemic biases remain in place that work to reduce the
 depth, breadth, and hence quality, of our collective thinking.
+
+*Update 22 Jan, 2015: Minor typo and grammar fixes*
