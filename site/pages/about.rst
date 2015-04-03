@@ -72,29 +72,57 @@ to rehash the discussions on python-dev).
 
 Since June 2011, after more than 12 years in the aerospace and defence
 sector with Boeing Australia, Nick has been working on development and test
-infrastructure for Red Hat. He is currently the Provisioning Architect for
-several of the automated test systems, a role which covers both ensuring that
-the test systems can test the products Red Hat supports, as well as adopting
-those same products to improve the efficiency and effectiveness of the test
-infrastructure. Current projects of particular interest include:
+infrastructure for Red Hat.
 
-* `Beaker <https://beaker-project.org>`__: Red Hat's custom full stack
-  software integration and testing system that allows fine-grained selection
-  of hardware, and testing with unreleased versions of Fedora, Red Hat
-  Enterprise Linux and CentOS
-* `Project Atomic <http://www.projectatomic.io/>`__: an integration project
-  bringing Docker containers together with several existing components of the
-  Red Hat ecosystem
-* `OpenStack <https://www.openstack.org/>`__: the general purpose scale out
-  cloud infrastructure originally published by RackSpace, and now the centre
-  of a fast growing ecosystem of public and private cloud providers
-* `OpenShift <https://www.openstack.org/>`__: Red Hat's fully open source
-  Platform-as-a-Service offering
+He is currently a software development workflow designer & process architect
+for several of Red Hat's internal services, focusing on the use of the
+upstream
+`Atomic Developer Bundle <https://github.com/projectatomic/adb-atomic-developer-bundle>`__
+project as a venue for collaboration on Vagrant and Docker based process
+improvement efforts related to sustainable maintenance of web service
+projects spanning a variety of programming languages, including Python,
+Perl, Ruby, Node.js, PHP and Java.
+
+In addition to CPython, the PSF, and the Atomic Developer Bundle, other
+projects & programs of particular current interest include:
+
+* `Kallithea <https://kallithea-scm.org/>`__: the Python-based fully open
+  source repository management service for git and Mercurial that Nick is
+  proposing to deploy as forge.python.org in
+  `PEP 474 <https://www.python.org/dev/peps/pep-0474/>`__
+* The `Python Packaging Authority <https://www.pypa.io/>`__: the group
+  responsible for maintaining core software distribution tools and services
+  in the Python ecosystem, including pip, setuptools, virtualenv, the
+  `Python Packaging User Guide <https://packaging.python.org/>`__ and the
+  `Python Package Index <https://pypi.python.org/pypi>`__
 * `Software Collections <https://www.softwarecollections.org/en/>`__: an
   approach to deploying platform components (such as language runtimes,
-  databases engines and web servers) on Linux, such that end user
+  database engines and web servers) on Linux, such that end user
   applications can use newer versions without interfering with the versions
   integrated directly into the underlying operating system distribution
+* `Fedora Environments & Stacks
+  <https://fedoraproject.org/wiki/Env_and_Stacks>`: a Fedora working group
+  aimed at continuously improving the developer experience for various
+  programming language communities on Fedora and derived platforms, including
+  exploring options for platform level support of `user level package management
+  <https://fedoraproject.org/wiki/Env_and_Stacks/Projects/UserLevelPackageManagement>`__
+* `Project Atomic <https://www.projectatomic.io/>`__: the overall integration
+  project that hosts the Atomic Developer Bundle, bringing Docker containers
+  together with several existing components of the Red Hat ecosystem
+* `CentOS Public CI <https://wiki.centos.org/QaWiki/CI>`__: a Jenkins based
+  public CI service offered by the CentOS project that (when fully
+  operational) is intended to provide a common location for infrastructure
+  management focused open source projects to run their integration tests
+* `OpenShift <https://www.openstack.org/>`__: Red Hat's fully open source
+  Platform-as-a-Service offering, with several key runtime elements of its
+  next generation architecture currently being collaboratively developed with
+  Google and other organisations in the upstream
+  `Kubernetes <http://kubernetes.io/>`__ project
+* `Red Hat Container Certification
+  <http://connect.redhat.com/zones/containers/why-certify-containers>`: a
+  program that allows Red Hat subscribers to take advantage of Linux
+  container technology to streamline the delivery and deployment of software
+  from Red Hat Certified ISV partners
 
 
 Selected articles and presentations
