@@ -52,17 +52,18 @@ About the author
 
 Nick is a CPython core developer and a member of the Board of Directors
 for the Python Software Foundation. He is the author or co-author of several
-accepted Python Enhancement Proposals (including PEP 343, which added the
-with statement and context managers in Python 2.5, and PEP 453 which saw
-the ``pip`` installer bundled with Python 3.4), and has also accepted
-a number of PEPs on Guido van Rossum's behalf as BDFL-Delegate.
+accepted Python Enhancement Proposals (including PEP 453, which saw
+the ``pip`` installer bundled with Python 3.4+, and PEP 466, which saw several
+key Python 3 network security enhancements backported to the Python 2.7
+series), and has also accepted a number of PEPs on Guido van Rossum's behalf
+as BDFL-Delegate.
 
 Nick is currently the BDFL-Delegate for most packaging related PEPs, serving
 as the primary liaison between the CPython core development team and the
 Python Packaging Authority. His own efforts in the packaging space are
 focused primarily on the metadata 2.0 interoperability standards (PEP 426,
-440, 459) and on communicating the ongoing work of the Python Packaging
-Authority to the broader Python community.
+440, 459) and on aligning the ongoing work of the Python Packaging
+Authority with the efforts of the Fedora Environments & Stacks working group.
 
 At the PyCon US 2013 language summit, Nick successfully argued for updates to
 the Python Enhancement Proposal process (described in PEP 1) that allowed
@@ -83,8 +84,9 @@ improvement efforts related to sustainable maintenance of web service
 projects spanning a variety of programming languages, including Python,
 Perl, Ruby, Node.js, PHP and Java.
 
-In addition to CPython, the PSF, and the Atomic Developer Bundle, other
-projects & programs of particular current interest include:
+In addition to CPython, the PSF, the Python Packaging Authority, and the
+Atomic Developer Bundle, other projects & programs of particular current
+interest include:
 
 * `Kallithea <https://kallithea-scm.org/>`__: the Python-based fully open
   source repository management service for git and Mercurial that Nick is
@@ -101,7 +103,7 @@ projects & programs of particular current interest include:
   applications can use newer versions without interfering with the versions
   integrated directly into the underlying operating system distribution
 * `Fedora Environments & Stacks
-  <https://fedoraproject.org/wiki/Env_and_Stacks>`: a Fedora working group
+  <https://fedoraproject.org/wiki/Env_and_Stacks>`__: a Fedora working group
   aimed at continuously improving the developer experience for various
   programming language communities on Fedora and derived platforms, including
   exploring options for platform level support of `user level package management
@@ -119,29 +121,71 @@ projects & programs of particular current interest include:
   Google and other organisations in the upstream
   `Kubernetes <http://kubernetes.io/>`__ project
 * `Red Hat Container Certification
-  <http://connect.redhat.com/zones/containers/why-certify-containers>`: a
+  <http://connect.redhat.com/zones/containers/why-certify-containers>`__: a
   program that allows Red Hat subscribers to take advantage of Linux
   container technology to streamline the delivery and deployment of software
   from Red Hat Certified ISV partners
 
 
-Selected articles and presentations
------------------------------------
+Selected articles, presentations and interviews
+-----------------------------------------------
 
-Python related presentations and articles:
+Python Enhancement Proposals:
 
+* PEP 338: `Executing modules as scripts <https://www.python.org/dev/peps/pep-0338/>`__ (aka "the -m switch")
+* PEP 394: `The "python" command on UNIX-like systems <https://www.python.org/dev/peps/pep-0394/>`__ (co-authored with Kerrick Staley)
+* PEP 414: `Explicit Unicode Literal for Python 3.3 <https://www.python.org/dev/peps/pep-0414/>`__ (co-authored with Armin Ronacher)
+* PEP 453: `Bootstrapping pip in Python installations <https://www.python.org/dev/peps/pep-0453/>`__ (co-authored with Donald Stufft)
+* PEP 466: `Network Security Enhancements for Python 2.7.x <https://www.python.org/dev/peps/pep-0466/>`__
+* PEP 426 (Draft): `Metadata for Python Software Packages 2.0 <https://www.python.org/dev/peps/pep-0426/>`__ (co-authored with Donald Stufft & Daniel Holth)
+* PEP 432 (Draft): `Simplifying the CPython interpreter startup sequence <https://www.python.org/dev/peps/pep-0432/>`__
+* PEP 474 (Draft): `Creating forge.python.org <https://www.python.org/dev/peps/pep-0474/>`__
+
+Python related presentations (video links):
+
+* Python Beyond (C)Python (Adventures in Software Distribution):
+
+  * `PyCon New Zealand 2014 keynote <http://pyvideo.org/video/3211/nick-coghlan-python-beyond-cpython-keynote>`__
+  * `SciPy 2014 keynote <http://pyvideo.org/video/2785/python-beyond-cpython-adventures-in-software-dis>`__
+
+* Python Packaging:
+
+  * `Python Packaging 2.0: Playing Well With Others <https://www.youtube.com/watch?v=7An2GobbSWU>`__ (linux.conf.au 2014)
+  * `Nobody Expects the Python Packaging Authority <http://pyvideo.org/video/2197/nobody-expects-the-python-packaging-authority>`__ (PyCon Australia 2013)
+
+* CPython Core Development:
+
+  * `Here be dragons: some elegant & ugly hacks in CPython <https://www.youtube.com/watch?v=VIBmWnlDjXc>`__ (PyCon Australia 2014)
+  * `How Python Evolves <http://pyvideo.org/video/997/how-python-evolves-and-how-you-can-help-make-it>`__ (PyCon Australia 2011)
+
+Python related articles and presentation reviews:
+
+* `The Transition to Multilingual Programming <https://developerblog.redhat.com/2014/09/09/transition-to-multilingual-programming-python/>`__
+* `Why Python 4.0 won't be like Python 3.0 <https://developerblog.redhat.com/2014/09/17/why-python-4-0-wont-be-like-python-3-0/>`__
 * `Python 3 Q & A <http://python-notes.curiousefficiency.org/en/latest/python3/questions_and_answers.html>`__
-* `Python Beyond (C)Python: Adventures in Software Distribution <http://pyvideo.org/video/2785/python-beyond-cpython-adventures-in-software-dis>`__ (SciPy 2014 keynote)
-* `Python Packaging 2.0: Playing Well With Others <https://www.youtube.com/watch?v=7An2GobbSWU>`__ (linux.conf.au 2014)
-* `Nobody Expects the Python Packaging Authority <http://pyvideo.org/video/2197/nobody-expects-the-python-packaging-authority>`__ (PyCon Australia 2013)
+* `Linux Weekly News article <http://lwn.net/Articles/580399/>`__ on my Python Packaging 2.0 presentation at linux.conf.au 2014
+
+Software design, development and deployment related presentations and articles:
+
+* `The Quid Pro Quo of Open Infrastructure <https://community.redhat.com/blog/2015/02/the-quid-pro-quo-of-open-infrastructure/>`__
+* `Musings on the culture of python-dev <http://www.curiousefficiency.org/posts/2011/04/musings-on-culture-of-python-dev.html>`__
+* `Status quo wins a stalemate <http://www.curiousefficiency.org/posts/2011/02/status-quo-wins-stalemate.html>`__
+* `Scripting Languages and Suitable Complexity <http://www.curiousefficiency.org/posts/2011/08/scripting-languages-and-suitable.html>`__
 * `Path Dependent Development <http://pyvideo.org/video/1625/path-dependent-development-why-on-earth-are-you>`__ (PyCon Australia 2012)
-* `How Python Evolves <http://pyvideo.org/video/997/how-python-evolves-and-how-you-can-help-make-it>`__ (PyCon Australia 2011)
-
-Beaker related presentations:
-
 * `Full Stack Integration Testing with Beaker <https://www.youtube.com/watch?v=tjUjdBm-Mqw>`__ (linux.conf.au 2014)
 
-Interviews and reviews:
+Community management related articles and interviews:
 
+* `Abusing Contributors is not OK <http://www.curiousefficiency.org/posts/2015/01/abuse-is-not-ok.html>`__ (reflecting on some comments from Linus Torvalds during his plenary session at linux.conf.au 2015)
+* `Effective communication, brain hacking and diversity <http://www.curiousefficiency.org/posts/2011/07/effective-communication-brain-hacking.html>`__
 * `opensource.com interview <http://opensource.com/business/14/7/new-membership-process-python-software-foundation>`__ on my joining the PSF board of directors
-* `LWN article <http://lwn.net/Articles/580399/>`__ on my Python Packaging 2.0 presentation at linux.conf.au 2014
+
+Podcast appearances (in reverse chronological order):
+
+* `Free as in Freedom <http://faif.us/cast/2015/mar/03/0x55/>`__ (with hosts Karen Sandler & Bradley M. Kuhn, recorded January 2015)
+* `Pragmatic <http://techdistortion.com/podcasts/pragmatic/episode-35-written-by-kernel-hackers-for-kernel-hackers>`__ (with host John Chidgey, recorded August 2014)
+* `From Python Import Podcast <http://frompythonimportpodcast.com/2014/03/31/episode-017-the-one-about-python-3/>`__ (with hosts Mike Pirnat & Dave Noyes and fellow guest Alex Gaynor, recorded March 2014)
+
+  * Historical note of potential interest: I consider this discussion between Alex and myself to be one of the key events on the road to PEP 466's backport of Python 3 network security features to the Python 2.7 series, and PEP 476's switch to verifying HTTPS certificates by default in Python 2.7.9+ and 3.4.3+
+
+* `Radio Free Python <http://radiofreepython.com/episodes/6/>`__ (with host Larry Hastings, recorded February 2012)
