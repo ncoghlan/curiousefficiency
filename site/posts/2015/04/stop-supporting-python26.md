@@ -114,9 +114,10 @@ suggests) in
 [March 2015](http://seven.centos.org/2015/03/centos-7-1503-is-released/)).
 
 For CentOS and other RHEL derivatives, the upstream project for Red Hat
-Software Collections is hosted at softwarecollections.org, making these
-collections available to the whole Fedora/RHEL/CentOS ecosystem, rather than
-only being available to Red Hat subscribers.
+Software Collections is hosted at
+[softwarecollections.org](https://www.softwarecollections.org/en/), making
+these collections available to the whole Fedora/RHEL/CentOS ecosystem, rather
+than only being available to Red Hat subscribers.
 
 Folks running Fedora Rawhide that are particularly keen to be on the cutting
 edge of Python can even obtain prerelease Python 3.5 nightly builds as a
