@@ -67,6 +67,8 @@ NAVIGATION_LINKS = {
         ('http://python-notes.curiousefficiency.org', 'Python Notes')
     ),
 }
+WRITE_TAG_CLOUD = True
+
 
 
 ##############################################
@@ -318,7 +320,7 @@ REDIRECTIONS = [
 # "rsync -rav output/* joe@my.site:/srv/www/site"
 # And then do a backup, or ping pingomatic.
 # To do manual deployment, set it to []
-DEPLOY_COMMANDS = ["rsync -rav output/* ~/devel/ncoghlan.github.io"]
+DEPLOY_COMMANDS = {u'default': [u'rsync -rav output/* ~/devel/ncoghlan.github.io']}
 
 # Where the output site should be located
 # If you don't use an absolute path, it will be considered as relative
@@ -465,7 +467,7 @@ COMMENT_SYSTEM_ID = "boredomandlaziness"
 
 # Enable social buttons?
 # Defaults to true
-SOCIAL_BUTTONS_CODE = False
+SOCIAL_BUTTONS_CODE = ""
 
 # Modify the number of Post per Index Page
 # Defaults to 10
