@@ -115,7 +115,7 @@ interest include:
   public CI service offered by the CentOS project that (when fully
   operational) is intended to provide a common location for infrastructure
   management focused open source projects to run their integration tests
-* `OpenShift <https://www.openstack.org/>`__: Red Hat's fully open source
+* `OpenShift <http://www.openshift.org/>`__: Red Hat's fully open source
   Platform-as-a-Service offering, with several key runtime elements of its
   next generation architecture currently being collaboratively developed with
   Google and other organisations in the upstream
