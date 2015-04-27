@@ -19,8 +19,8 @@ This year, all 4 miniconfs (Education, Science & Data Analysis, OpenStack and Dj
 
 I'm also pleased to announce two pre-arranged sessions at the Education Miniconf:
 
-* Carrie Anne Philbin, author of "Adventures in Raspberry Pi" and Education Pioneer at the Raspberry Pi Foundation will be speaking on the Foundation's [Picademy](https://www.raspberrypi.org/picademy/) professional development program for primary and secondary teachers 
+* Carrie Anne Philbin, author of ["Adventures in Raspberry Pi"](https://www.raspberrypi.org/carrie-anne-philbins-adventures-in-raspberry-pi/) and Education Pioneer at the Raspberry Pi Foundation will be speaking on the Foundation's [Picademy](https://www.raspberrypi.org/picademy/) professional development program for primary and secondary teachers 
 
-* Peter Whitehouse, author of [IPT - a virtual approach](http://www.wonko.info/ipt/) (online since 1992!), and a longstanding board member of the [Queensland Society for Information Technology in Education](https://www.qsite.edu.au/home) will provide insight into some of the challenges and opportunities of integrating Python and other open source software into Australian IT education
+* Peter Whitehouse, author of [IPT - a virtual approach](http://www.wonko.info/ipt/) (online since 1992!) and a longstanding board member of the [Queensland Society for Information Technology in Education](https://www.qsite.edu.au/home) will provide insight into some of the challenges and opportunities of integrating Python and other open source software into Australian IT education
 
 I'm genuinely looking forward to chairing this event, as I see tremendous potential in forging stronger connections between Australian educators (both formal and informal) and the broader Python and open source communities.
