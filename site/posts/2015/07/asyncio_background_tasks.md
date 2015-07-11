@@ -12,6 +12,7 @@ operations asynchronously in an otherwise synchronous application?"
 
 Say, for example, I have the following code:
 
+    :::pycon
     >>> import itertools, time
     >>> def ticker():
     ...     for i in itertools.count():
@@ -31,6 +32,7 @@ Say, for example, I have the following code:
 With the native coroutine syntax coming in Python 3.5, I can change that
 synchronous code into event-driven asynchronous code easily enough:
 
+    :::python
     async def ticker():
         for i in itertools.count():
             print(i)
@@ -41,6 +43,7 @@ REPL's equivalent of appending `&` to a shell command?
 
 It turns out it looks something like this:
 
+    :::python
     import asyncio
     def run_in_background(target, *, loop=None):
         """Schedules target as a background task
@@ -63,6 +66,7 @@ It turns out it looks something like this:
 
 So now I can do:
 
+    :::pycon
     >>> async def ticker():
     ...     for i in itertools.count():
     ...         print(i)
@@ -76,6 +80,7 @@ But how do I run that for a while? The event loop won't run unless the current
 thread starts it running and either stops when a particular event occurs, or
 when explicitly stopped. Another helper function covers that:
 
+    :::python
     def run_in_foreground(task, *, loop=None):
         """Runs event loop in current thread until the given task completes
 
@@ -89,6 +94,7 @@ when explicitly stopped. Another helper function covers that:
 
 And then I can do:
 
+    :::pycon
     >>> run_in_foreground(asyncio.sleep(5))
     0
     1
@@ -99,6 +105,7 @@ And then I can do:
 Here we can see the background task running while we wait for the foreground
 task to complete. And if I do it again with a different timeout:
 
+    :::pycon
     >>> run_in_foreground(asyncio.sleep(3))
     5
     6
@@ -111,6 +118,7 @@ We can also single step the event loop with a zero second sleep (the ticks
 reflect the fact there was more than a second delay between running each
 command):
 
+    :::pycon
     >>> run_in_foreground(asyncio.sleep(0))
     8
     >>> run_in_foreground(asyncio.sleep(0))
@@ -118,6 +126,7 @@ command):
 
 And start a second ticker to run concurrently with the first one:
 
+    :::pycon
     >>> ticker2 = run_in_background(ticker())
     >>> ticker2
     <Task pending coro=<ticker() running at <stdin>:1>>
@@ -129,6 +138,7 @@ The asynchronous tickers will happily hang around in the background, ready to
 resume operation whenever I give them the opportunity. If I decide I want to
 stop one of them, I can cancel the corresponding task:
 
+    :::pycon
     >>> ticker1.cancel()
     True
     >>> run_in_foreground(asyncio.sleep(0))
@@ -143,6 +153,7 @@ handling of callables in `run_in_background`. However, I haven't figured out
 how to reliably cancel a task created through `run_in_executor` so we'll make
 sure this variant of the synchronous version stops on its own:
 
+    :::python
     import itertools, time
     def ticker_sync(stop):
         for i in range(stop):
@@ -154,6 +165,7 @@ The key difference between scheduling a callable and a coroutine, is that the
 callable will start executing immediately in another thread, rather than
 waiting for the current thread to run the event loop:
 
+    :::pycon
     >>> threaded_ticker = run_in_background(lambda: ticker_sync(5)); print("Starts immediately!")
     0
     Starts immediately!
