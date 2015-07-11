@@ -85,7 +85,7 @@ second server, we can easily do that as well:
     >>> server2 = run_in_foreground(make_server2)
     >>> server2.sockets[0]
     <socket.socket fd=7, family=AddressFamily.AF_INET, type=2049, proto=6, laddr=('127.0.0.1', 41200)>
-    >>> port2 = server.sockets[0].getsockname()[1]
+    >>> port2 = server2.sockets[0].getsockname()[1]
 
 Now, both of these servers are configured to run directly in the main thread's
 event loop, so trying to talk to them using a synchronous client wouldn't work.
