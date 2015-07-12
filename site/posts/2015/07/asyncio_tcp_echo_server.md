@@ -109,7 +109,8 @@ Note something important here: you will get *exactly* that sequence of
 output messages, as this is *all* running in the interpreter's main thread, in
 a deterministic order. If the servers were running in their own threads, we
 wouldn't have that property (and reliably getting access to the port numbers
-the server components chose would also have been far more difficult).
+the server components were assigned by the underlying operating system would
+also have been far more difficult).
 
 And to demonstrate both servers are up and running:
 
