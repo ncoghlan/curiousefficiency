@@ -320,7 +320,16 @@ REDIRECTIONS = [
 # "rsync -rav output/* joe@my.site:/srv/www/site"
 # And then do a backup, or ping pingomatic.
 # To do manual deployment, set it to []
-DEPLOY_COMMANDS = {u'default': [u'rsync -rav output/* ~/devel/ncoghlan.github.io']}
+DEPLOY_COMMANDS = {
+    u'default': [u'rsync -rav output/* ~/devel/ncoghlan.github.io'],
+    u'publish': [
+        u"""pushd ~/devel/ncoghlan.github.io &&
+            git commit -am $_NIKOLA_DEPLOY_MSG &&
+            git push
+            popd
+        """,
+    ]
+}
 
 # Where the output site should be located
 # If you don't use an absolute path, it will be considered as relative

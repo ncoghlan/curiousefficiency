@@ -126,7 +126,7 @@ And to demonstrate both servers are up and running:
 
 That then raises an interesting question: how would we send messages to the
 two servers in parallel, while still only using a single thread to manage the
-client and server coroutines? For that, we'll need our another of our helper
+client and server coroutines? For that, we'll need another of our helper
 functions from the previous post, `schedule_coroutine`:
 
     :::python
