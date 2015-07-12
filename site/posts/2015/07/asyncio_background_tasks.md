@@ -33,46 +33,47 @@ With the native coroutine syntax coming in Python 3.5, I can change that
 synchronous code into event-driven asynchronous code easily enough:
 
     :::python
+    import asyncio, itertools
     async def ticker():
         for i in itertools.count():
             print(i)
             await asyncio.sleep(1)
 
-But how do I kick that ticker off as a background task? What's the Python
-REPL's equivalent of appending `&` to a shell command?
+But how do I arrange for that ticker to start running in the background? What's
+the coroutine equivalent of appending `&` to a shell command?
 
 It turns out it looks something like this:
 
     :::python
     import asyncio
-    def run_in_background(target, *, loop=None):
-        """Schedules target as a background task
+    def schedule_coroutine(target, *, loop=None):
+        """Schedules target coroutine in the given event loop
+
+        If not given, *loop* defaults to the current thread's event loop
 
         Returns the scheduled task.
-
-        If target is a future or coroutine, equivalent to asyncio.ensure_future
-        If target is a callable, it is scheduled in the default executor
         """
-        if loop is None:
-            loop = asyncio.get_event_loop()
-        try:
+        if asyncio.iscoroutine(target):
             return asyncio.ensure_future(target, loop=loop)
-        except TypeError:
-            pass
-        if callable(target):
-            return loop.run_in_executor(None, target)
-        raise TypeError("background task must be future, coroutine or "
-                        "callable, not {!r}".format(type(target)))
+        raise TypeError("target must be a coroutine, "
+                        "not {!r}".format(type(target)))
+
+**Update:** *This post originally suggested a combined "run_in_background"
+helper function that handle both scheduling coroutines and calling arbitrary
+callables in a background thread or process. On further reflection, I decided
+that was unhelpfully conflating two different concepts, so I replaced it with
+separate "schedule_coroutine" and "call_in_background" helpers*
 
 So now I can do:
 
     :::pycon
+    >>> import itertools
     >>> async def ticker():
     ...     for i in itertools.count():
     ...         print(i)
     ...         await asyncio.sleep(1)
     ...
-    >>> ticker1 = run_in_background(ticker())
+    >>> ticker1 = schedule_coroutine(ticker())
     >>> ticker1
     <Task pending coro=<ticker() running at <stdin>:1>>
 
@@ -90,7 +91,7 @@ when explicitly stopped. Another helper function covers that:
         """
         if loop is None:
             loop = asyncio.get_event_loop()
-        return loop.run_until_complete(asyncio.ensure_future(task))
+        return loop.run_until_complete(asyncio.ensure_future(task, loop=loop))
 
 And then I can do:
 
@@ -127,7 +128,7 @@ command):
 And start a second ticker to run concurrently with the first one:
 
     :::pycon
-    >>> ticker2 = run_in_background(ticker())
+    >>> ticker2 = schedule_coroutine(ticker())
     >>> ticker2
     <Task pending coro=<ticker() running at <stdin>:1>>
     >>> run_in_foreground(asyncio.sleep(0))
@@ -148,25 +149,45 @@ stop one of them, I can cancel the corresponding task:
     >>> run_in_foreground(asyncio.sleep(0))
 
 But what about our original *synchronous* ticker? Can I run that as a
-background task? It turns out I can, as that's the reason for the special
-handling of callables in `run_in_background`. However, I haven't figured out
-how to reliably cancel a task created through `run_in_executor` so we'll make
-sure this variant of the synchronous version stops on its own:
+background task? It turns out I can, with the aid of another helper function:
+
+    :::python
+    def call_in_background(target, *, loop=None, executor=None):
+        """Schedules and starts target callable as a background task
+
+        If not given, *loop* defaults to the current thread's event loop
+        If not given, *executor* defaults to the loop's default executor
+
+        Returns the scheduled task.
+        """
+        if loop is None:
+            loop = asyncio.get_event_loop()
+        if callable(target):
+            return loop.run_in_executor(executor, target)
+        raise TypeError("target must be a callable, "
+                        "not {!r}".format(type(target)))
+
+
+However, I haven't figured out how to reliably cancel a task running in a
+separate thread or process, so for demonstration purposes, we'll define a
+variant of the synchronous version that stops automatically after 5 ticks
+rather than ticking indefinitely:
 
     :::python
     import itertools, time
-    def ticker_sync(stop):
-        for i in range(stop):
+    def tick_5_sync():
+        for i in range(5):
             print(i)
             time.sleep(1)
         print("Finishing")
 
-The key difference between scheduling a callable and a coroutine, is that the
-callable will start executing immediately in another thread, rather than
-waiting for the current thread to run the event loop:
+The key difference between scheduling a callable in a background thread and
+scheduling a coroutine in the current thread, is that the callable will start
+executing immediately, rather than waiting for the current thread
+to run the event loop:
 
     :::pycon
-    >>> threaded_ticker = run_in_background(lambda: ticker_sync(5)); print("Starts immediately!")
+    >>> threaded_ticker = call_in_background(tick_5_sync); print("Starts immediately!")
     0
     Starts immediately!
     >>> 1

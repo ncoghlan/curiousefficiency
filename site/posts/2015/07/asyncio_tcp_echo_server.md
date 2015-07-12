@@ -28,7 +28,7 @@ otherwise synchronous code (like the interactive prompt):
         """
         if loop is None:
             loop = asyncio.get_event_loop()
-        return loop.run_until_complete(asyncio.ensure_future(task))
+        return loop.run_until_complete(asyncio.ensure_future(task, loop=loop))
 
 Next we'll define the coroutine for our TCP echo server implementation,
 which simply waits to receive up to 100 bytes on each new client connection,
@@ -65,7 +65,7 @@ We then use our `run_in_foreground` helper to interact with these coroutines
 from the interactive prompt. First, we start the echo server:
 
     :::pycon
-    >>> make_server = asyncio.start_server(handle_echo, '127.0.0.1')
+    >>> make_server = asyncio.start_server(handle_tcp_echo, '127.0.0.1')
     >>> server = run_in_foreground(make_server)
 
 Conveniently, since this is a coroutine running in the *current* thread, rather
@@ -125,35 +125,36 @@ And to demonstrate both servers are up and running:
 
 That then raises an interesting question: how would we send messages to the
 two servers in parallel, while still only using a single thread to manage the
-client and server coroutines? For that, we'll need our other helper function
-from the previous post, `run_in_background`:
+client and server coroutines? For that, we'll need our another of our helper
+functions from the previous post, `schedule_coroutine`:
 
     :::python
-    def run_in_background(target, *, loop=None, executor=None):
-        """Schedules target as a background task
+    def schedule_coroutine(target, *, loop=None):
+        """Schedules target coroutine in the given event loop
+
+        If not given, *loop* defaults to the current thread's event loop
 
         Returns the scheduled task.
-
-        If target is a future or coroutine, equivalent to asyncio.ensure_future
-        If target is a callable, it is scheduled in the given (or default) executor
         """
-        if loop is None:
-            loop = asyncio.get_event_loop()
-        try:
+        if asyncio.iscoroutine(target):
             return asyncio.ensure_future(target, loop=loop)
-        except TypeError:
-            pass
-        if callable(target):
-            return loop.run_in_executor(executor, target)
-        raise TypeError("background task must be future, coroutine or "
-                        "callable, not {!r}".format(type(target)))
+        raise TypeError("target must be a coroutine, "
+                        "not {!r}".format(type(target)))
+
+
+**Update:** *As with the previous post, this post originally suggested a
+combined "run_in_background" helper function that handled both scheduling
+coroutines and calling arbitrary callables in a background thread or process.
+On further reflection, I decided that was unhelpfully conflating two different
+concepts, so I replaced it with separate "schedule_coroutine" and
+"call_in_background" helpers*
 
 
 First, we set up the two client operations we want to run in parallel:
 
     :::pycon
-    >>> echo1 = run_in_background(tcp_echo_client('Hello World!', port))
-    >>> echo2 = run_in_background(tcp_echo_client('Hello World!', port2))
+    >>> echo1 = schedule_coroutine(tcp_echo_client('Hello World!', port))
+    >>> echo2 = schedule_coroutine(tcp_echo_client('Hello World!', port2))
 
 Then we use the `asyncio.wait` function in combination with `run_in_foreground`
 to run the event loop until both operations are complete:
@@ -172,9 +173,10 @@ to run the event loop until both operations are complete:
     -- Terminating connection on client
     <- Client received: 'Hello World!'
     -- Terminating connection on client
+    ({<Task finished coro=<tcp_echo_client() done, defined at <stdin>:1> result='Hello World!'>, <Task finished coro=<tcp_echo_client() done, defined at <stdin>:1> result='Hello World!'>}, set())
 
-And finally, we retrieve our results using the `result` method of the future
-objects returned by `run_in_background`:
+And finally, we retrieve our results using the `result` method of the task
+objects returned by `schedule_coroutine`:
 
     :::pycon
     >>> echo1.result()
@@ -182,5 +184,82 @@ objects returned by `run_in_background`:
     >>> echo2.result()
     'Hello World!'
 
-We can set up as many background tasks as we like, and then use `asyncio.wait`
-as the foreground task to wait for them all to complete.
+We can set up as many concurrent background tasks as we like, and then use
+`asyncio.wait` as the foreground task to wait for them all to complete.
+
+But what if we had an existing blocking client function that we wanted or
+needed to use (e.g. we're using an `asyncio` server to test a synchronous
+client API). To handle that case, we use our third helper function from the
+previous post:
+
+    :::python
+    def call_in_background(target, *, loop=None, executor=None):
+        """Schedules and starts target callable as a background task
+
+        If not given, *loop* defaults to the current thread's event loop
+        If not given, *executor* defaults to the loop's default executor
+
+        Returns the scheduled task.
+        """
+        if loop is None:
+            loop = asyncio.get_event_loop()
+        if callable(target):
+            return loop.run_in_executor(executor, target)
+        raise TypeError("target must be a callable, "
+                        "not {!r}".format(type(target)))
+
+To explore this, we'll need a blocking client, which we can build based on
+Python's existing
+[socket programming HOWTO guide](https://docs.python.org/3/howto/sockets.html):
+
+    :::python
+    import socket
+    def tcp_echo_client_sync(message, port):
+        conn = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        print('-> Client connecting to port: %r' % port)
+        conn.connect(('127.0.0.1', port))
+        print('-> Client sending: %r' % message)
+        conn.send(message.encode())
+        data = conn.recv(100).decode()
+        print('<- Client received: %r' % data)
+        print('-- Terminating connection on client')
+        conn.close()
+        return data
+
+We can then use `functools.partial` in combination with `call_in_background` to
+start client requests in multiple operating system level threads:
+
+    :::pycon
+    >>> query_server = partial(tcp_echo_client_sync, "Hello World!", port)
+    >>> query_server2 = partial(tcp_echo_client_sync, "Hello World!", port2)
+    >>> bg_call = call_in_background(query_server)
+    -> Client connecting to port: 35876
+    -> Client sending: 'Hello World!'
+    >>> bg_call2 = call_in_background(query_server2)
+    -> Client connecting to port: 41672
+    -> Client sending: 'Hello World!'
+
+Here we see that, unlike our coroutine clients, the synchronous clients have
+started running immediately in a separate thread. However, because the event
+loop isn't currently running in the main thread, they've blocked waiting for
+a response from the TCP echo servers. As with the coroutine clients, we
+address that by running the event loop in the main thread until our clients
+have both received responses:
+
+    :::pycon
+    >>> run_in_foreground(asyncio.wait([bg_call, bg_call2]))
+    -> Server received 'Hello World!' from ('127.0.0.1', 52585)
+    <- Server sending: 'Hello World!'
+    -- Terminating connection on server
+    -> Server received 'Hello World!' from ('127.0.0.1', 34399)
+    <- Server sending: 'Hello World!'
+    <- Client received: 'Hello World!'
+    -- Terminating connection on server
+    -- Terminating connection on client
+    <- Client received: 'Hello World!'
+    -- Terminating connection on client
+    ({<Future finished result='Hello World!'>, <Future finished result='Hello World!'>}, set())
+    >>> bg_call.result()
+    'Hello World!'
+    >>> bg_call2.result()
+    'Hello World!'
