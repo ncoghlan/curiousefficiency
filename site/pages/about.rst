@@ -76,41 +76,43 @@ sector with Boeing Australia, Nick has been working on development and test
 infrastructure for Red Hat.
 
 He is currently a software development workflow designer & process architect
-for several of Red Hat's internal services, focusing on the use of the
-upstream
-`Atomic Developer Bundle <https://github.com/projectatomic/adb-atomic-developer-bundle>`__
-project as a venue for collaboration on Vagrant and Docker based process
-improvement efforts related to sustainable maintenance of web service
-projects spanning a variety of programming languages, including Python,
-Perl, Ruby, Node.js, PHP and Java.
+working on Fedora's software management processes and tooling on behalf of Red
+Hat's Developer Experience group.
 
-In addition to CPython, the PSF, the Python Packaging Authority, and the
-Atomic Developer Bundle, other projects & programs of particular current
-interest include:
+In addition to CPython, the PSF, the
+`Python Packaging Authority <https://www.pypa.io/>`__, and the
+`Fedora Environments & Stacks <https://fedoraproject.org/wiki/Env_and_Stacks>`__
+Working Group, other projects & programs of particular current interest include:
 
 * `Kallithea <https://kallithea-scm.org/>`__: the Python-based fully open
   source repository management service for git and Mercurial that Nick is
-  proposing to deploy as forge.python.org in
+  proposing to deploy as forge.python.org for use in CPython development
   `PEP 474 <https://www.python.org/dev/peps/pep-0474/>`__
-* The `Python Packaging Authority <https://www.pypa.io/>`__: the group
-  responsible for maintaining core software distribution tools and services
-  in the Python ecosystem, including pip, setuptools, virtualenv, the
-  `Python Packaging User Guide <https://packaging.python.org/>`__ and the
-  `Python Package Index <https://pypi.python.org/pypi>`__
 * `Software Collections <https://www.softwarecollections.org/en/>`__: an
   approach to deploying platform components (such as language runtimes,
   database engines and web servers) on Linux, such that end user
   applications can use newer versions without interfering with the versions
   integrated directly into the underlying operating system distribution
-* `Fedora Environments & Stacks
-  <https://fedoraproject.org/wiki/Env_and_Stacks>`__: a Fedora working group
-  aimed at continuously improving the developer experience for various
-  programming language communities on Fedora and derived platforms, including
-  exploring options for platform level support of `user level package management
-  <https://fedoraproject.org/wiki/Env_and_Stacks/Projects/UserLevelPackageManagement>`__
 * `Project Atomic <https://www.projectatomic.io/>`__: the overall integration
-  project that hosts the Atomic Developer Bundle, bringing Docker containers
-  together with several existing components of the Red Hat ecosystem
+  project for container technology in the Fedora/RHEL/CentOS ecosystem,
+  bringing Docker containers together with various other components of that
+  ecosystem (most notably RPM for subcomponent packaging and rpm-ostree for
+  atomic host updates)
+* `Nulecule <https://github.com/projectatomic/nulecule>`__: a JSON-based
+  specification for defining multi-part container based applications and
+  deploying them to a range of target environments.
+* `Sandboxed Applications for GNOME
+  <https://wiki.gnome.org/Projects/SandboxedApps>`__: application of Linux
+  container technology, kdbus and Wayland to the task of sandboxing
+  desktop GUI applications.
+* `Fedora Server Roles
+  <https://sgallagh.wordpress.com/2014/12/11/rolekit-or-how-i-learned-to-stop-thinking-in-terms-of-packages/>`__:
+  application of Linux container technology (including Nulecule) to the
+  management of stateful Linux servers (e.g. domain controllers, database
+  servers, file servers, backup servers, groupware servers)
+* `Fedora Scientific <https://labs.fedoraproject.org/en/scientific/>`__: a
+  KDE-based Fedora desktop distribution with a range of science and data
+  analysis applications pre-installed, including IPython Notebook.
 * `CentOS Public CI <https://wiki.centos.org/QaWiki/CI>`__: a Jenkins based
   public CI service offered by the CentOS project that (when fully
   operational) is intended to provide a common location for infrastructure

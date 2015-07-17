@@ -324,7 +324,7 @@ DEPLOY_COMMANDS = {
     u'default': [u'rsync -rav output/* ~/devel/ncoghlan.github.io'],
     u'publish': [
         u"""pushd ~/devel/ncoghlan.github.io &&
-            git commit -am $_NIKOLA_DEPLOY_MSG &&
+            git commit -am "$_NIKOLA_DEPLOY_MSG" &&
             git push
             popd
         """,
