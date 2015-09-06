@@ -3,5 +3,6 @@ syntax: glob
 site/output
 site/cache
 site/Guardfile
+site/plugins
 .doit.db
 *.py[co]
