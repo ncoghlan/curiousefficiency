@@ -126,7 +126,7 @@ Procedural programming: C, Rust, Cython
 
 Python's default execution model is procedural: we start at the top of the main
 module and execute it statement by statement. All of Python's support for the
-other approaches to data and computational modelling covered below are built
+other approaches to data and computational modelling covered below is built
 on this procedural foundation.
 
 The `C`_ programming language is still the unchallenged ruler of low level
@@ -360,7 +360,7 @@ noting as the preferred functional programming language for the .NET CLR.
 Learning one of these languages is likely to provide insight into Python's own
 computational pipeline modelling tools, including container comprehensions,
 generators, generator expressions, the ``functools`` and ``itertools`` standard
-library modules, and third party functional Python toolkits like ``toolz``.
+library modules, and third party functional Python toolkits like `toolz`_.
 
 .. _Haskell: https://en.wikipedia.org/wiki/Haskell_%28programming_language%29
 .. _list comprehensions: https://docs.python.org/3/whatsnew/2.0.html#list-comprehensions
@@ -480,7 +480,7 @@ other object.
 dialects take the "code as data" concept to extremes, as Lisp code consists of
 nested lists describing the operations to be performed (the name of the language
 itself stands for "LISt Processor"). The great strength of Lisp-style languages
-is that they make it incredibly easy to eliminate write your own domain specific
+is that they make it incredibly easy to write your own domain specific
 languages. The great weakness of Lisp-style languages is that they make it
 incredibly easy to write your own domain specific languages, which can sometimes
 make it difficult to read other people's code.
@@ -513,7 +513,7 @@ Popular programming languages don't exist in isolation - they exist as part of
 larger ecosystems of redistributors (both commercial and community focused),
 end users, framework developers, tool developers, educators and more.
 
-`Lua`_ is a popular programming language for embedding in a larger applications
+`Lua`_ is a popular programming language for embedding in larger applications
 as a scripting engine. Significant examples include it being the language
 used to write add-ons for the World of Warcraft game client, and it's also
 embedded in the RPM utility used by many Linux distributions. Compared to
@@ -538,7 +538,7 @@ Like PHP, `Perl`_ rose to popularity on the back of Linux. Unlike PHP, which
 grew specifically as a web development platform, Perl rose to prominence as
 a system administrator's tool, using regular expressions to string together
 and manipulate the output of text-based Linux operating system commands. When
-shell, ``awk`` and ``sed`` were no longer up to handling a task, Perl was there
+``sh``, ``awk`` and ``sed`` were no longer up to handling a task, Perl was there
 to take over.
 
 Learning one of these languages isn't likely to provide any great insight into
@@ -604,7 +604,9 @@ are actually being used to start teaching computational thinking to children.
 One of the most popular of those is `Scratch`_, which uses a drag-and-drop
 programming interface to let students manipulate a self-contained graphical
 environment, with sprites moving around and reacting to events in that
-environment.
+environment. Graphical environments like Scratch are the programming
+equivalent of the picture books we use to help introduce children to reading
+and writing.
 
 This idea of using a special purpose educational language to manipulate a
 graphical environment isn't new though, with one of the earliest incarnations
