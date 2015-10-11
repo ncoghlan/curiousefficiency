@@ -1,6 +1,6 @@
 .. title: 27 languages to improve your Python
 .. slug: languages-to-improve-your-python
-.. date: 2015-09-06 02:54:39 UTC
+.. date: 2015-10-11 02:54:39 UTC
 .. tags: python
 .. category: python
 .. link: 
