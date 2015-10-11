@@ -62,7 +62,7 @@ suggestion. First, the specific requests:
 3. If someone we know is learning to program for the first time, and they
    choose to learn a language we don't personally like, we should *support them
    in their choice anyway*. They know what fits *their* brain better than we do,
-   so the right language for us you may not be the right language for them. If
+   so the right language for us may not be the right language for them. If
    they start getting frustrated with their original choice, to the point where
    it's demotivating them from learning to program at all, *then* it makes sense
    to start recommending alternatives. This advice applies even for those of us
