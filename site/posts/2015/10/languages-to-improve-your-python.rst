@@ -142,7 +142,7 @@ Mozilla. The reason it makes this list is because Rust aims to take all of the
 lessons we've learned as an industry regarding what *not* to do in C, and
 design a new language that is interoperable with C libraries, offers the same
 precise control over hardware usage that is needed in a low level systems
-program language, but uses a different compile time approach to data modelling
+programming language, but uses a different compile time approach to data modelling
 and memory management to structurally eliminate many of the common flaws
 afflicting C programs (such as buffer overflows, double free errors, null
 pointer access, and thread synchronisation problems). I'm an embedded systems
@@ -448,7 +448,7 @@ compiles to JavaScript code (which then doesn't include any runtime type
 checking), and TypeScript annotations for popular JavaScript libraries are
 maintained in the dedicated `DefinitelyTyped`_ repository.
 
-As Chris Neugebaur pointed out in his `PyCon Australia presentation`_, this is
+As Chris Neugebauer pointed out in his `PyCon Australia presentation`_, this is
 very similar to the proposed relationship between Python, the `typeshed`_ type
 hint repository, and type inference and analysis tools like `mypy`_.
 
