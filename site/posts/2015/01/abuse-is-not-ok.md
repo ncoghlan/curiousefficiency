@@ -299,3 +299,7 @@ when a wide array of systemic biases remain in place that work to reduce the
 depth, breadth, and hence quality, of our collective thinking.
 
 *Update 22 Jan, 2015: Minor typo and grammar fixes*
+
+*Update 19 Apr, 2016: This article is also available in
+[Russian](http://www.everycloudtech.com/abuse-is-not-ok),
+thanks to [Everycloud technologies](http://www.everycloudtech.com/)*
