@@ -1,8 +1,8 @@
 .. title: Propose a talk for the PyCon Australia Education Seminar!
 .. slug: pycon-australia-education-cfp-2016
 .. date: 2016-05-02 01:29:23 UTC
-.. tags: python pycon-au
-.. category: pycon-au
+.. tags: python,pycon-au
+.. category: python
 .. link:
 .. previewimage: /files/python-in-education-cover.gif
 .. description:
