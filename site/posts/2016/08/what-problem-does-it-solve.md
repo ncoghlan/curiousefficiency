@@ -28,11 +28,11 @@ the vast majority of the usability difference relates to an entirely different
 question we often forget to ask about the software we use:
 *What problem does it solve?*
 
-That is, many of otherwise surprising discrepancies between `urllib`/`urllib2`
-and `requests` are best explained by the fact that they solve
-*different problems*, and the problems most HTTP client developers have today
+That is, many otherwise surprising discrepancies between `urllib`/`urllib2`
+and `requests` are best explained by the fact that they *solve different
+problems*, and the problems most HTTP client developers have today
 are closer to those Kenneth Reitz designed `requests` to solve in 2010/2011,
-than they are to the problems that Jeremy Hylton was aiming to solve mroe than
+than they are to the problems that Jeremy Hylton was aiming to solve more than
 a decade earlier.
 
 
@@ -72,17 +72,17 @@ HTTP(S) before you gain access to most HTTP(S) features.
 When it was written, `urllib2` was a square peg that was designed to fit into
 the square hole of "generic URL processing". By contrast, most modern client
 developers are looking for a round peg to fit into the round hole that is
-HTTPS+JSON processing - `urllib2` will fit if you shave the corners off first,
-but `requests` comes pre-rounded.
+HTTPS+JSON processing - `urllib`/`urllib2` will fit if you shave the corners
+off first, but `requests` comes pre-rounded.
 
 
 So why not add requests to the standard library?
 ------------------------------------------------
 
 Answering the not-so-obvious question of "What problem does it solve?" then
-leads to a more obvious follow-up question: if the problem that `urllib`/
-`urllib2` were designed to solve is no longer common, while the problem that
-`requests` solves *is* common, why not add `requests` to the standard library?
+leads to a more obvious follow-up question: if the problems that `urllib`/
+`urllib2` were designed to solve are no longer common, while the problems that
+`requests` solves *are* common, why not add `requests` to the standard library?
 
 If I recall correctly, Guido gave in-principle approval to this idea at a
 language summit back in 2013 or so (after the `requests` 1.0 release), and it's
