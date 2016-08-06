@@ -78,6 +78,10 @@ suggestion. First, the specific requests:
    deploying it without performing appropriate due diligence on the provenance
    and security properties of that software)
 
+
+Broadening our horizons
+-----------------------
+
 My broader suggestion is aimed at folks that are starting to encounter the
 limits of the core procedural subset of Python and would hence like to start
 exploring more of Python's own available "tools for thinking".
