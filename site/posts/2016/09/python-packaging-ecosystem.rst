@@ -198,7 +198,7 @@ goal they're learning Python for in the first place.
 
 However, conda's pre-integration based approach to tackling the external
 dependency problem is also why "just use conda for everything" isn't a
-sufficient answer for the Python software ecosystem as a while.
+sufficient answer for the Python software ecosystem as a whole.
 
 If you're working on an operating system component for Fedora, Debian, or any
 other distro, you actually *want* to be using the system provided Python
