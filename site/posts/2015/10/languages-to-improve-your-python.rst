@@ -456,7 +456,7 @@ As Chris Neugebauer pointed out in his `PyCon Australia presentation`_, this is
 very similar to the proposed relationship between Python, the `typeshed`_ type
 hint repository, and type inference and analysis tools like `mypy`_.
 
-In essence, bothTypeScript and type hinting in Python are ways of writing
+In essence, both TypeScript and type hinting in Python are ways of writing
 particular kinds of tests, either as separate files (just like normal tests),
 or inline with the main body of the code (just like type declarations in
 statically typed languages). In either case, you run a *separate* command to
@@ -521,7 +521,7 @@ end users, framework developers, tool developers, educators and more.
 as a scripting engine. Significant examples include it being the language
 used to write add-ons for the World of Warcraft game client, and it's also
 embedded in the RPM utility used by many Linux distributions. Compared to
-CPython, a Lua runtime will generally be a tenth of the size, and it's weaker
+CPython, a Lua runtime will generally be a tenth of the size, and its weaker
 introspection capabilities generally make it easier to isolate from the rest of
 the application and the host operating system. A notable contribution from the
 Lua community to the Python ecosystem is the adoption of the LuaJIT FFI
