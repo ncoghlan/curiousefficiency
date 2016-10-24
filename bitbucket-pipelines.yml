@@ -1,14 +1,14 @@
-# Use CentOS 7 Python to get a proper UTF-8 enabled environment
-image: centos/python-35-centos7
+# Use Fedora 24 base image to get a proper UTF-8 enabled environment
+image: fedora:24
 
 pipelines:
   default:
     - step:
         script:
-          - export LANG=en_US.UTF-8
-          - which python && python --version
-          - which pip && pip --version
-          - pip install --user -U 'nikola ~= 7.8'
+          - export LANG=C.UTF-8
+          - python3 --version
+          - pip3 --version
+          - pip3 install --user -U 'nikola ~= 7.8'
           - nikola --version
           - pushd site
           - nikola build
