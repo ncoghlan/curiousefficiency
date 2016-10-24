@@ -9,6 +9,8 @@ pipelines:
   default:
     - step:
         script: # Modify the commands below to build your repository.
+          - locale-gen C.UTF-8
+          - export LANG=C.UTF-8
           - pip install -U nikola
           - pip --version
           - nikola --version
