@@ -6,9 +6,8 @@ pipelines:
     - step:
         script:
           - export LANG=en_US.UTF-8
-          - source scl_source enable rh-python35
-          - python --version
-          - pip --version
+          - which python && python --version
+          - which pip && pip --version
           - pip install --user -U 'nikola ~= 7.8'
           - nikola --version
           - pushd site
