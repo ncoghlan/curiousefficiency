@@ -9,7 +9,7 @@ pipelines:
           - export LANG=C.UTF-8
           - python3 --version
           - pip3 --version
-          - pip3 install --user -U 'nikola ~= 7.8'
+          - pip3 install --user -U 'nikola ~= 7.8' markdown
           - ~/.local/bin/nikola --version
           - pushd site
           - ~/.local/bin/nikola build
