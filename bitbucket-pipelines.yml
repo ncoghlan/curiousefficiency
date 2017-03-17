@@ -1,5 +1,6 @@
-# Use Fedora 24 base image to get a proper UTF-8 enabled environment
-image: fedora:24
+# Use Fedora 25 base image to get a proper UTF-8 enabled environment
+# and a manylinux compatible version of pip
+image: fedora:25
 
 pipelines:
   default:
