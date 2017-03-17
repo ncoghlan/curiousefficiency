@@ -303,3 +303,8 @@ depth, breadth, and hence quality, of our collective thinking.
 *Update 19 Apr, 2016: This article is also available in
 [Russian](http://www.everycloudtech.com/abuse-is-not-ok),
 thanks to [Everycloud technologies](http://www.everycloudtech.com/)*
+
+
+*Update 1 Dec, 2016: This article is also available in
+[Estonian](http://www.autoteileprofi.de/science/2016/12/01/kuritarvitamises-toetajad-ei-ole-ok/),
+thanks to Arija Liepkalnietis*
