@@ -12,6 +12,6 @@ pipelines:
           - pip3 install --user -U 'nikola ~= 7.8'
           - nikola --version
           - pushd site
-          - nikola build
+          - ~/.local/bin/nikola build
           - popd
           - ls
