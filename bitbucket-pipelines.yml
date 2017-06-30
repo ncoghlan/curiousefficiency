@@ -18,8 +18,8 @@ pipelines:
           - ~/.local/bin/nikola build
           - popd
           - ls
-  branches:
-    default:
+  custom:
+    publish-site:
       - step:
           caches:
             - pip
