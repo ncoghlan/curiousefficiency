@@ -31,6 +31,13 @@ At the current rate of language feature releases (roughly every 18 months),
 that means we would likely see Python 4.0 some time in 2023, rather than
 seeing Python 3.10.
 
+*Update:* After this post was originally written back in 2014, subsequent
+discussions on the core python-dev mailing list led to the conclusion
+that the release after 3.9 will probably just be 3.10. However, a 4.0
+will presumably still happen some day, and the premise of this article
+is expected to hold for that release: it will be held to the same backwards
+compatibility obligations as a Python 3.X to 3.X+1 update.
+
 # So how will Python continue to evolve?
 
 First and foremost, nothing has changed about the Python Enhancement Proposal
