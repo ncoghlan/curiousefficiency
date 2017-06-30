@@ -25,7 +25,7 @@ pipelines:
             - pip
             - deployed
           script:
-            - dnf install git
+            - dnf install -y git
             - git clone git@github.com:ncoghlan/ncoghlan.github.io.git deployed
             - export LANG=C.UTF-8
             - python3 --version
