@@ -45,7 +45,7 @@ new software features and versions):
   user is the individual that wrote it. Examples:
 
   * my Digital Blasphemy
-  `image download notebook <https://nbviewer.jupyter.org/urls/bitbucket.org/ncoghlan/misc/raw/default/notebooks/Digital%20Blasphemy.ipynb>`__
+    `image download notebook <https://nbviewer.jupyter.org/urls/bitbucket.org/ncoghlan/misc/raw/default/notebooks/Digital%20Blasphemy.ipynb>`__
   * Paul Fenwick's (Inter)National `Rick Astley Hotline <https://github.com/pjf/rickastley>`__
 
 
