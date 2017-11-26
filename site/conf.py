@@ -13,7 +13,7 @@ BLOG_AUTHOR = "Nick Coghlan"
 BLOG_TITLE = "Curious Efficiency"
 # This is the main URL for your site. It will be used
 # in a prominent link
-SITE_URL = "http://www.curiousefficiency.org"
+SITE_URL = "https://www.curiousefficiency.org"
 # This is the URL where nikola's output will be deployed.
 # If not set, defaults to SITE_URL
 BASE_URL = SITE_URL + "/"
@@ -64,7 +64,7 @@ NAVIGATION_LINKS = {
         ('/archive.html', 'Archives'),
         ('/categories/index.html', 'Tags'),
         ('/rss.xml', 'RSS'),
-        ('http://python-notes.curiousefficiency.org', 'Python Notes')
+        ('https://python-notes.curiousefficiency.org', 'Python Notes')
     ),
 }
 WRITE_TAG_CLOUD = True
