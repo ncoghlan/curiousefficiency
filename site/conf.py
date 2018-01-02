@@ -332,7 +332,7 @@ DEPLOY_COMMANDS = {
     u'publish-ci': [
         u"""rsync -rav output/* ../deployed &&
             pushd ../deployed &&
-            git commit -am "$_NIKOLA_DEPLOY_MSG" &&
+            git commit -am "Automatic deployment from CI" &&
             git push
             popd
         """,
