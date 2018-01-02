@@ -328,7 +328,7 @@ DEPLOY_COMMANDS = {
             git push
             popd
         """,
-    ]
+    ],
     u'publish-ci': [
         u"""rsync -rav output/* ../deployed &&
             pushd ../deployed &&
@@ -336,7 +336,7 @@ DEPLOY_COMMANDS = {
             git push
             popd
         """,
-    ]
+    ],
 }
 
 # Where the output site should be located
