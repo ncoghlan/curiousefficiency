@@ -5,8 +5,8 @@ About the site
 --------------
 
 Curious Efficiency is the intermittently updated personal website of Nicholas
-Coghlan, CPython core developer, PSF Director, Red Hat toolsmith, cognitive
-science dabbler, and cynical idealist.
+Coghlan, CPython core developer, PSF Fellow, software development toolsmith,
+cognitive science dabbler, and cynical idealist.
 
 The main portion of the site is generated via
 `Nikola <http://getnikola.com/>`__,
@@ -50,20 +50,24 @@ About the author
 .. image:: ../files/pycon2011_language_summit_cropped.jpg
    :align: right
 
-Nick is a CPython core developer and a member of the Board of Directors
-for the Python Software Foundation. He is the author or co-author of several
-accepted Python Enhancement Proposals (including PEP 453, which saw
-the ``pip`` installer bundled with Python 3.4+, and PEP 466, which saw several
-key Python 3 network security enhancements backported to the Python 2.7
-series), and has also accepted a number of PEPs on Guido van Rossum's behalf
+Nick is a CPython core developer, a Fellow of the Python Software Foundation,
+and the founder of the PyCon Australia Education Seminar.
+
+He is the author or co-author of several accepted Python Enhancement Proposals
+(including PEP 453, which saw the ``pip`` installer bundled with Python 3.4+,
+PEP 466, which saw several key Python 3 network security enhancements backported
+to the Python 2.7 series, and PEP 538, which updated CPython to coerce the
+legacy ASCII-based C locale to a suitable UTF-8 based locale when one is
+available), and has also accepted a number of PEPs on Guido van Rossum's behalf
 as BDFL-Delegate.
 
 Nick is currently the BDFL-Delegate for most packaging related PEPs, serving
 as the primary liaison between the CPython core development team and the
-Python Packaging Authority. His own efforts in the packaging space are
-focused primarily on the metadata 2.0 interoperability standards (PEP 426,
-440, 459) and on aligning the ongoing work of the Python Packaging
-Authority with the efforts of the Fedora Environments & Stacks working group.
+`Python Packaging Authority <https://www.pypa.io/>`__. His own efforts in the
+packaging space are focused primarily on the
+`Python Packaging User Guide <https://packaging.python.org>`_, and the
+`pipenv <https://packaging.python.org/tutorials/managing-dependencies/>`_
+application dependency management project.
 
 At the PyCon US 2013 language summit, Nick successfully argued for updates to
 the Python Enhancement Proposal process (described in PEP 1) that allowed
@@ -71,79 +75,85 @@ BDFL-Delegates to approve PEPs that don't affect the language definition or
 the standard library directly on the relevant mailing lists (without needing
 to rehash the discussions on python-dev).
 
-Since June 2011, after more than 12 years in the aerospace and defence
-sector with Boeing Australia, Nick has been working on development and test
-infrastructure for Red Hat.
+In addition to CPython, the PSF, the PyPA, and the PSF's
+`Packaging Working Group <https://wiki.python.org/psf/PackagingWG>`__,
+other projects & programs of particular current interest include:
 
-He is currently a software development workflow designer & process architect
-working on Fedora's software management processes and tooling on behalf of Red
-Hat's Developer Experience group.
-
-In addition to CPython, the PSF, the
-`Python Packaging Authority <https://www.pypa.io/>`__, and the
-`Fedora Environments & Stacks <https://fedoraproject.org/wiki/Env_and_Stacks>`__
-Working Group, other projects & programs of particular current interest include:
-
-* `Kallithea <https://kallithea-scm.org/>`__: the Python-based fully open
-  source repository management service for git and Mercurial that Nick is
-  proposing to deploy as forge.python.org for use in CPython development
-  `PEP 474 <https://www.python.org/dev/peps/pep-0474/>`__
-* `Software Collections <https://www.softwarecollections.org/en/>`__: an
-  approach to deploying platform components (such as language runtimes,
-  database engines and web servers) on Linux, such that end user
+* `Kubernetes <https://kubernetes.io/>`__: a Google created open source
+  application deployment platform, designed to ease adoption for folks
+  accustomed to managing their own Linux servers directly, and supported across
+  all major public clouds. I'm interested in this as I believe it addresses many
+  of the vendor lock-in concerns otherwise raised against public cloud adoption
+  (and unlike previous efforts in that space, it has support from the major
+  public cloud vendors themselves).
+* `OpenShift <https://www.openshift.org/>`__: Red Hat's fully open source
+  Kubernetes-based Platform-as-a-Service offering that provides tools to
+  handle automatic updates of deployed images when either application code
+  or the underlying base image changes. I'm interested in this as Red Hat are
+  veterans at selling to the legacy infrastructure crowd, and many of the "But
+  what about..." objections raised against plain Kubernetes already have
+  solutions built in to OpenShift.
+* `Zappa <https://www.zappa.io/>`__: a toolkit for running Python WSGI
+  applications in AWS Lambda behind AWS API Gateway. I'm interested in this
+  as I think it's the level of "Don't bother me with irrelevant infrastructure
+  details" that Kubernetes et al should be aspiring to, but they're not there
+  yet.
+* `Software Collections <https://www.softwarecollections.org/en/>`__: a
+  Red Hat supported approach to deploying platform components (such as language
+  runtimes, database engines and web servers) on Linux, such that end user
   applications can use newer versions without interfering with the versions
-  integrated directly into the underlying operating system distribution
-* `Project Atomic <https://www.projectatomic.io/>`__: the overall integration
-  project for container technology in the Fedora/RHEL/CentOS ecosystem,
-  bringing Docker containers together with various other components of that
-  ecosystem (most notably RPM for subcomponent packaging and rpm-ostree for
-  atomic host updates)
-* `Nulecule <https://github.com/projectatomic/nulecule>`__: a JSON-based
-  specification for defining multi-part container based applications and
-  deploying them to a range of target environments.
-* `Sandboxed Applications for GNOME
-  <https://wiki.gnome.org/Projects/SandboxedApps>`__: application of Linux
-  container technology, kdbus and Wayland to the task of sandboxing
-  desktop GUI applications.
-* `Fedora Server Roles
-  <https://sgallagh.wordpress.com/2014/12/11/rolekit-or-how-i-learned-to-stop-thinking-in-terms-of-packages/>`__:
-  application of Linux container technology (including Nulecule) to the
-  management of stateful Linux servers (e.g. domain controllers, database
-  servers, file servers, backup servers, groupware servers)
+  integrated directly into the underlying operating system distribution. I'm
+  interested in this as "We have to use the system Python in some ancient RHEL
+  version and aren't allowed to install packages from PyPI" is one of the
+  largest drags on innovation in the Python ecosystem, and Software
+  Collections are the main mechanism that Red Hat uses to offer newer Python
+  runtimes to their customers.
+* `Zappa <https://www.zappa.io/>`__: a toolkit for running Python WSGI
+  applications in AWS Lambda behind AWS API Gateway. I'm interested in this
+  as I think it's the level of "Don't bother me with irrelevant infrastructure
+  details" that Kubernetes et al should be aspiring to, but they're not there
+  yet.
+* `Conda <https://conda.io/docs/>`__: a cross-platform environment manager
+  created initially for the Python data science community. Its language
+  independent design means it can not only manage the installation of Python
+  packages, but also manage the Python runtime itself, external binary
+  dependencies written in C/C++/FORTRAN/etc, and data analysis components
+  written in other languages entirely (such as R and Julia).
 * `Fedora Scientific <https://labs.fedoraproject.org/en/scientific/>`__: a
   KDE-based Fedora desktop distribution with a range of science and data
   analysis applications pre-installed, including IPython Notebook.
-* `CentOS Public CI <https://wiki.centos.org/QaWiki/CI>`__: a Jenkins based
-  public CI service offered by the CentOS project that (when fully
-  operational) is intended to provide a common location for infrastructure
-  management focused open source projects to run their integration tests
-* `OpenShift <http://www.openshift.org/>`__: Red Hat's fully open source
-  Platform-as-a-Service offering, with several key runtime elements of its
-  next generation architecture currently being collaboratively developed with
-  Google and other organisations in the upstream
-  `Kubernetes <http://kubernetes.io/>`__ project
-* `Red Hat Container Certification
-  <http://connect.redhat.com/zones/containers/why-certify-containers>`__: a
-  program that allows Red Hat subscribers to take advantage of Linux
-  container technology to streamline the delivery and deployment of software
-  from Red Hat Certified ISV partners
 
 
 Selected articles, presentations and interviews
 -----------------------------------------------
 
-Python Enhancement Proposals:
+Selected Python Enhancement Proposals:
 
 * PEP 338: `Executing modules as scripts <https://www.python.org/dev/peps/pep-0338/>`__ (aka "the -m switch")
+* PEP 343: `The "with" statement <https://www.python.org/dev/peps/pep-0343/>`__ (co-authored with Guido van Rossum)
+* PEP 366: `Main module explicit relative imports <https://www.python.org/dev/peps/pep-0366/>`__
 * PEP 394: `The "python" command on UNIX-like systems <https://www.python.org/dev/peps/pep-0394/>`__ (co-authored with Kerrick Staley)
 * PEP 414: `Explicit Unicode Literal for Python 3.3 <https://www.python.org/dev/peps/pep-0414/>`__ (co-authored with Armin Ronacher)
+* PEP 432 (Draft): `Simplifying the CPython interpreter startup sequence <https://www.python.org/dev/peps/pep-0432/>`__
 * PEP 453: `Bootstrapping pip in Python installations <https://www.python.org/dev/peps/pep-0453/>`__ (co-authored with Donald Stufft)
 * PEP 466: `Network Security Enhancements for Python 2.7.x <https://www.python.org/dev/peps/pep-0466/>`__
-* PEP 426 (Draft): `Metadata for Python Software Packages 2.0 <https://www.python.org/dev/peps/pep-0426/>`__ (co-authored with Donald Stufft & Daniel Holth)
-* PEP 432 (Draft): `Simplifying the CPython interpreter startup sequence <https://www.python.org/dev/peps/pep-0432/>`__
-* PEP 474 (Draft): `Creating forge.python.org <https://www.python.org/dev/peps/pep-0474/>`__
+* PEP 477: `Backport ensurepip to Python 2.7 <https://www.python.org/dev/peps/pep-0477/>`__ (co-authored with Donald Stufft)
+* PEP 489: `Multi-phase extension module initialisation <https://www.python.org/dev/peps/pep-0489/>`__ (co-authored with Petr Viktorin and Stefan Behnel)
+* PEP 493: `HTTPS verification migration tools for Python 2.7 <https://www.python.org/dev/peps/pep-0493/>`__ (co-authored with Robert Kuska and Marc-Andre Lemburg)
+* PEP 538: `Coercing the legacy C locale to a UTF-8 based locale <https://www.python.org/dev/peps/pep-0538/>`__
+* PEP 565: `Show DeprecationWarning in __main__ <https://www.python.org/dev/peps/pep-0565/>`__
+* PEP 558 (Draft): `Defined semantics for locals() <https://www.python.org/dev/peps/pep-0558/>`__
 
-Python related presentations (video links):
+Selected Python related presentations (video links):
+
+* Opportunities & Challenges in Open Collaboration
+
+  * `PyCon Pune 2017 <http://pyvideo.org/pycon-pune-2017/keynote-opportunities-and-challenges-in-open-collaboration.html>`__
+
+* Contributors, Colleagues, Clients & Customers: Sustaining Open Source Communities
+
+  * `PyGotham 2015 keynote <http://pyvideo.org/pygotham-2015/contributors-colleagues-clients-customers-su.html>`__
+  * `PyCon Poland 2015 keynote <http://pyvideo.org/pycon-pl-2015/contributors-colleagues-clients-customers-sustaining-open-source-communities.html>`__
 
 * Python Beyond (C)Python (Adventures in Software Distribution):
 
@@ -160,24 +170,32 @@ Python related presentations (video links):
   * `Here be dragons: some elegant & ugly hacks in CPython <https://www.youtube.com/watch?v=VIBmWnlDjXc>`__ (PyCon Australia 2014)
   * `How Python Evolves <http://pyvideo.org/video/997/how-python-evolves-and-how-you-can-help-make-it>`__ (PyCon Australia 2011)
 
-Python related articles and presentation reviews:
+Selected Python related articles and presentation reviews:
 
+* `Considering Python's target audience <https://www.curiousefficiency.org/posts/2017/10/considering-pythons-target-audience.html>`__
+* `The Python Packaging Ecosystem (September 2016) <https://www.curiousefficiency.org/posts/2016/09/python-packaging-ecosystem.html>`__
+* `27 Languages to Improve Your Python <https://www.curiousefficiency.org/posts/2015/10/languages-to-improve-your-python.html#broadening-our-horizons>`__
 * `The Transition to Multilingual Programming <https://developerblog.redhat.com/2014/09/09/transition-to-multilingual-programming-python/>`__
 * `Why Python 4.0 won't be like Python 3.0 <https://developerblog.redhat.com/2014/09/17/why-python-4-0-wont-be-like-python-3-0/>`__
 * `Python 3 Q & A <http://python-notes.curiousefficiency.org/en/latest/python3/questions_and_answers.html>`__
 * `Linux Weekly News article <http://lwn.net/Articles/580399/>`__ on my Python Packaging 2.0 presentation at linux.conf.au 2014
+* `Justifying Python language changes <https://www.curiousefficiency.org/posts/2011/02/justifying-python-language-changes.html>`__
 
-Software design, development and deployment related presentations and articles:
+Selected software design, development and deployment related presentations and articles:
 
-* `The Quid Pro Quo of Open Infrastructure <https://community.redhat.com/blog/2015/02/the-quid-pro-quo-of-open-infrastructure/>`__
+* `Front-end Integration Testing with Splinter <http://pyvideo.org/pycon-au-2017/front-end-integration-testing-with-splinter.html>`__ (PyCon Australia 2017)
+* `Tracking package updates with release-monitoring.org <https://lwn.net/Articles/711906/>` (LWN article on my linux.conf.au 2017 presentation)
+* `What problem does it solve? <https://www.curiousefficiency.org/posts/2016/08/what-problem-does-it-solve.html>` (on constructively criticising API designs)
 * `Musings on the culture of python-dev <http://www.curiousefficiency.org/posts/2011/04/musings-on-culture-of-python-dev.html>`__
 * `Status quo wins a stalemate <http://www.curiousefficiency.org/posts/2011/02/status-quo-wins-stalemate.html>`__
 * `Scripting Languages and Suitable Complexity <http://www.curiousefficiency.org/posts/2011/08/scripting-languages-and-suitable.html>`__
 * `Path Dependent Development <http://pyvideo.org/video/1625/path-dependent-development-why-on-earth-are-you>`__ (PyCon Australia 2012)
 * `Full Stack Integration Testing with Beaker <https://www.youtube.com/watch?v=tjUjdBm-Mqw>`__ (linux.conf.au 2014)
 
-Community management related articles and interviews:
+Selected community management related articles and interviews:
 
+* `27 Languages to Improve Your Python (introduction) <https://www.curiousefficiency.org/posts/2015/10/languages-to-improve-your-python.html>`__
+* `The Quid Pro Quo of Open Infrastructure <https://community.redhat.com/blog/2015/02/the-quid-pro-quo-of-open-infrastructure/>`__
 * `Abusing Contributors is not OK <http://www.curiousefficiency.org/posts/2015/01/abuse-is-not-ok.html>`__ (reflecting on some comments from Linus Torvalds during his plenary session at linux.conf.au 2015)
 * `Effective communication, brain hacking and diversity <http://www.curiousefficiency.org/posts/2011/07/effective-communication-brain-hacking.html>`__
 * `opensource.com interview <http://opensource.com/business/14/7/new-membership-process-python-software-foundation>`__ on my joining the PSF board of directors
