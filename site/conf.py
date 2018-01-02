@@ -330,7 +330,7 @@ DEPLOY_COMMANDS = {
         """,
     ]
     u'publish-ci': [
-        u"""rsync -rav output/* ../deployed
+        u"""rsync -rav output/* ../deployed &&
             pushd ../deployed &&
             git commit -am "$_NIKOLA_DEPLOY_MSG" &&
             git push
