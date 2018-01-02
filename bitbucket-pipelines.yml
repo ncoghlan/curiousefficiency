@@ -3,6 +3,7 @@
 image: fedora:25
 
 pipelines:
+  # For PR branches, only do a test build
   default:
     - step:
         caches:
@@ -18,8 +19,9 @@ pipelines:
           - ~/.local/bin/nikola build
           - popd
           - ls
-  custom:
-    publish-site:
+  branches:
+    # For the actual default branch, auto-deploy all changes
+    default:
       - step:
           caches:
             - pip
@@ -34,6 +36,7 @@ pipelines:
             - ~/.local/bin/nikola --version
             - pushd site
             - ~/.local/bin/nikola build
+            - ~/.local/bin/nikola deploy publish-ci
             - popd
             - ls
 
