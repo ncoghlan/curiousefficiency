@@ -184,8 +184,8 @@ Selected Python related articles and presentation reviews:
 Selected software design, development and deployment related presentations and articles:
 
 * `Front-end Integration Testing with Splinter <http://pyvideo.org/pycon-au-2017/front-end-integration-testing-with-splinter.html>`__ (PyCon Australia 2017)
-* `Tracking package updates with release-monitoring.org <https://lwn.net/Articles/711906/>` (LWN article on my linux.conf.au 2017 presentation)
-* `What problem does it solve? <https://www.curiousefficiency.org/posts/2016/08/what-problem-does-it-solve.html>` (on constructively criticising API designs)
+* `Tracking package updates with release-monitoring.org <https://lwn.net/Articles/711906/>`__ (LWN article on my linux.conf.au 2017 presentation)
+* `What problem does it solve? <https://www.curiousefficiency.org/posts/2016/08/what-problem-does-it-solve.html>`__ (on constructively criticising API designs)
 * `Musings on the culture of python-dev <http://www.curiousefficiency.org/posts/2011/04/musings-on-culture-of-python-dev.html>`__
 * `Status quo wins a stalemate <http://www.curiousefficiency.org/posts/2011/02/status-quo-wins-stalemate.html>`__
 * `Scripting Languages and Suitable Complexity <http://www.curiousefficiency.org/posts/2011/08/scripting-languages-and-suitable.html>`__
