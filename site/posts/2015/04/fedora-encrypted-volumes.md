@@ -19,7 +19,7 @@ For both `cryptsetup` and `tcplay`, one of the things you need to set up in orde
 
 However, the `losetup` instructions gave me trouble, as they appeared to be telling me I didn't have any loopback devices:
 
-    [ncoghlan@thechalk ~]$ losetup -f
+    [ncoghlan@thechalk ~]$ losetup -f <path to encrypted file>
     losetup: cannot find an unused loop device: No such file or directory
 
 Searching on Google for "fedora create a loop device" brought me to [this Unix & Linux Stack Exchange question](http://unix.stackexchange.com/questions/98742/how-to-add-more-dev-loop-devices-on-fedora-19) as the first result, but the answer there struck me as being far too low level to be reasonable as a prerequisite for accessing encrypted files as volumes.
@@ -30,7 +30,7 @@ However, looking more closely at Kay's original request to trim back the list of
 
 That didn't match my own experience with the `losetup` command, so I wondered what might be going on to explain the discrepancy, which is when it occurred to me that running `losetup` with root access might solve the problem. Generally speaking, ordinary users aren't going to have the permissions needed to create new devices, and I'd been running the `losetup` command using my normal user permissions rather than running it as `root`. That was a fairly straightforward theory to test, and sure enough, that worked:
 
-    [ncoghlan@thechalk ~]$ sudo losetup -f
+    [ncoghlan@thechalk ~]$ sudo losetup -f <path to encrypted file>
     /dev/loop0
 
 Armed with my new loop device, I was then able to open the TrueCrypt encrypted file on the external GoFlex drive as a decrypted volume:
