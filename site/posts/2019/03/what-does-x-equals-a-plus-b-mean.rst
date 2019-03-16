@@ -297,13 +297,13 @@ between a domain defined by the set of keys, and a range defined by a multiset
 of values. Attempting to define algebraic operations on them is thus a bit like
 attempting to define meaningful algebraic operations on "``def f(): pass``".
 
-This means that unlike the addition of ``collections.Counter`` (which was
+This means that unlike the introduction of ``collections.Counter`` (which was
 grounded in the semantics of mathematical multisets and borrowed its Python
-notation from element-wise addition on matrices), or the addition of the matrix
+notation from element-wise addition on matrices), or introducing the matrix
 multiplication operator (which was grounded in the semantics of matrix algebra,
 and only needed a text-editor-friendly symbol assigned, similar to using ``*``
 instead of ``×`` for scalar multiplication and ``/`` instead of ``÷`` for
-division), any addition of in-fix operator support for merging dictionaries will
+division), any binary in-fix operator support for merging dictionaries would
 be blazing completely new conceptual trails not previously found in either
 mathematics or in other mainstream programming languages.
 
