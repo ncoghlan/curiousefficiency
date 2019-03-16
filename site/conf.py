@@ -334,7 +334,8 @@ DEPLOY_COMMANDS = {
     u'default': [u'rsync -rav output/* ~/devel/ncoghlan.github.io'],
     u'publish': [
         u"""pushd ~/devel/ncoghlan.github.io &&
-            git commit -am "$_NIKOLA_DEPLOY_MSG" &&
+            git add . &&
+            git commit -m "$_NIKOLA_DEPLOY_MSG" &&
             git push
             popd
         """,
@@ -342,7 +343,8 @@ DEPLOY_COMMANDS = {
     u'publish-ci': [
         u"""rsync -rav output/* ../deployed &&
             pushd ../deployed &&
-            git commit -am "Automatic deployment from CI" &&
+            git add . &&
+            git commit -m "Automatic deployment from CI" &&
             git push
             popd
         """,
