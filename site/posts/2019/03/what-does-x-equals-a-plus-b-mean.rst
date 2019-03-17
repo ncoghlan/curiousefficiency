@@ -294,22 +294,39 @@ What does all this have to do with the idea of dictionary addition?
 Python's dictionaries are quite interesting mathematically, as in mathematical
 terms, they're not actually a container. Instead, they're a function mapping
 between a domain defined by the set of keys, and a range defined by a multiset
-of values. Attempting to define algebraic operations on them is thus a bit like
-attempting to define meaningful algebraic operations on "``def f(): pass``".
+of values [#]_.
 
-This means that unlike the introduction of ``collections.Counter`` (which was
-grounded in the semantics of mathematical multisets and borrowed its Python
-notation from element-wise addition on matrices), or introducing the matrix
-multiplication operator (which was grounded in the semantics of matrix algebra,
-and only needed a text-editor-friendly symbol assigned, similar to using ``*``
-instead of ``×`` for scalar multiplication and ``/`` instead of ``÷`` for
-division), any binary in-fix operator support for merging dictionaries would
-be blazing completely new conceptual trails not previously found in either
-mathematics or in other mainstream programming languages.
+This means that the mathematical context that would most closely correspond to
+defining addition on dictionaries is the algebraic combination of functions.
+That's defined such that ``(f + g)(x)`` is equivalent to ``f(x) + g(x)``, so
+the only binary in-fix operator support for dictionaries that could be grounded
+in an existing mathematical shared context is one where ``d1 + d2`` was
+shorthand for::
 
-That seems to me like a big leap to take for something where the in-place form
-already has a perfectly acceptable spelling (``d1.update(d2)``), and a more
-expression-friendly variant could be provided as a new dictionary class method::
+    x = d1.copy()
+    for k, rhs in d2.items():
+        try:
+            lhs = x[k]
+        except KeyError:
+            x[k] = rhs
+        else:
+            x[k] = lhs + rhs
+
+That has the unfortunate implication that introducing a Python-specific binary
+operator shorthand for dictionary copy-and-update semantics would represent a
+hard conceptual break with mathematics, rather than a transfer of existing
+mathematical concepts into the language. Contrast that with the introduction
+of ``collections.Counter`` (which was grounded in the semantics of mathematical
+multisets and borrowed its Python notation from element-wise addition on
+matrices), or the matrix multiplication operator (which was grounded in the
+semantics of matrix algebra, and only needed a text-editor-friendly symbol
+assigned, similar to using ``*`` instead of ``×`` for scalar multiplication
+and ``/`` instead of ``÷`` for division),
+
+At least to me, that seems like a big leap to take for something where the
+in-place form already has a perfectly acceptable spelling (``d1.update(d2)``),
+and a more expression-friendly variant could be provided as a new dictionary
+class method::
 
     @classmethod
     def from_merge(cls, *inputs):
@@ -333,3 +350,12 @@ rather than the current proposal of operator syntax support.
 .. [#] The whole point of the python-ideas phase of discussion is to get a PEP
    ready for a more critical review by the core development team, so it isn't
    fair to the PEP author to invite wider review before they're ready for it.
+
+.. [#] The final section originally stated that arithmetic operations on
+   mathematical functions didn't have a defined meaning, so proposing them for
+   Python's dictionaries would be treading new conceptual ground. However, a
+   `reader pointed out <https://twitter.com/deshipu/status/1107020770495086599>`_
+   that algebraic operations on functions *are* defined, and they translate to
+   applying the functions independently to the inputs, and then performing the
+   specified arithmetic operation on the results. The final section has been
+   updated accordingly.
