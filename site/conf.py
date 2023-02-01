@@ -108,6 +108,7 @@ POSTS = (
 PAGES = (
     ("pages/*.txt", "pages", "story.tmpl"),
     ("pages/*.rst", "pages", "story.tmpl"),
+    ("pages/*.html", "pages", "story.tmpl"),
 )
 # One or more folders containing files to be copied as-is into the output.
 # The format is a dictionary of "source" "relative destination".
