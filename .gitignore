@@ -1,5 +1,3 @@
-syntax: glob
-
 site/output
 site/cache
 site/Guardfile
