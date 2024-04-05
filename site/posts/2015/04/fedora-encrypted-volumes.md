@@ -22,7 +22,7 @@ However, the `losetup` instructions gave me trouble, as they appeared to be tell
     [ncoghlan@thechalk ~]$ losetup -f <path to encrypted file>
     losetup: cannot find an unused loop device: No such file or directory
 
-Searching on Google for "fedora create a loop device" brought me to [this Unix & Linux Stack Exchange question](http://unix.stackexchange.com/questions/98742/how-to-add-more-dev-loop-devices-on-fedora-19) as the first result, but the answer there struck me as being far too low level to be reasonable as a prerequisite for accessing encrypted files as volumes.
+Searching on Google for "fedora create a loop device" brought me to [this Unix & Linux Stack Exchange question](https://unix.stackexchange.com/questions/98742/how-to-add-more-dev-loop-devices-on-fedora-19) as the first result, but the answer there struck me as being far too low level to be reasonable as a prerequisite for accessing encrypted files as volumes.
 
 So I scanned further down through the list of search results, with [this Fedora bug report](https://bugzilla.redhat.com/show_bug.cgi?id=1019440) about difficulty accessing TrueCrypt volumes catching my eye. As with the Stack Overflow answer, most of the comments there seemed to be about reverting the effect of [a change to Fedora's default behaviour](https://bugzilla.redhat.com/show_bug.cgi?id=896160) a change which meant that Fedora no longer came with any loop devices preconfigured.
 
@@ -45,7 +45,7 @@ So I took four additional steps:
 
 * First, I filed [a new issue](https://bugzilla.redhat.com/show_bug.cgi?id=1215370) against `losetup`, suggesting that it nudge the user in the direction of running it with root privileges if they first run it as a normal user and don't find any devices
 * Secondly, I followed up on the previous issue I had found in order to [explain my findings](https://bugzilla.redhat.com/show_bug.cgi?id=1019440#c22)
-* Thirdly, I added a [new answer](http://unix.stackexchange.com/a/198637/61794) to the Stack Exchange question I had found, suggesting the use of the higher level `losetup` command over the lower level `mknod` command
+* Thirdly, I added a [new answer](https://unix.stackexchange.com/a/198637/61794) to the Stack Exchange question I had found, suggesting the use of the higher level `losetup` command over the lower level `mknod` command
 * Finally, I wrote this post recounting the tale of figuring this out from a combination of local system manual pages and online searches
 
 Adding a right-click option to Dolphin to be able to automatically mount TrueCrypt encrypted files as volumes and open them would be an even nicer solution, but also a whole lot more work. The only actual *change* suggested in my above set of additional steps is tweaking a particular error message in one particular situation, which should be far more attainable than a new Dolphin feature or addon.

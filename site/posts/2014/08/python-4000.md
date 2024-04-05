@@ -24,7 +24,7 @@ comes after Python 3.9". That's it. No profound changes to the language,
 no major backwards compatibility breaks - going from Python 3.9 to 4.0
 should be as uneventful as going from Python 3.3 to 3.4 (or from 2.6 to 2.7).
 I even expect the stable Application Binary Interface (as first defined in
-[PEP 384](http://www.python.org/dev/peps/pep-0384/)) to be preserved across
+[PEP 384](https://www.python.org/dev/peps/pep-0384/)) to be preserved across
 the boundary.
 
 At the current rate of language feature releases (roughly every 18 months),
@@ -61,7 +61,7 @@ to make it ever more popular as an embedded scripting language in larger
 applications running in those environments.
 
 For backwards incompatible changes,
-[PEP 387](http://www.python.org/dev/peps/pep-0387/) provides a reasonable
+[PEP 387](https://www.python.org/dev/peps/pep-0387/) provides a reasonable
 overview of the approach that was used for years in the Python 2 series, and
 still applies today: if a feature is identified as being excessively
 problematic, then it may be deprecated and eventually removed.
@@ -77,7 +77,7 @@ needed within the Python 3 series:
   before they're sufficiently stable to accommodate the relatively slow
   language update cycle
 * the "provisional API" concept (introduced in
-  [PEP 411](http://www.python.org/dev/peps/pep-0411/)) makes it possible to
+  [PEP 411](https://www.python.org/dev/peps/pep-0411/)) makes it possible to
   apply a "settling in" period to libraries and APIs that are judged likely
   to benefit from broader feedback before offering the standard backwards
   compatibility guarantees
@@ -101,7 +101,7 @@ It's also worth noting that Python 3 wasn't expected to be as disruptive as
 it turned out to be. Of all the backwards incompatible changes in Python 3,
 many of the serious barriers to migration can be laid at the feet of one
 little bullet point in
-[PEP 3100](http://www.python.org/dev/peps/pep-3100/#atomic-types):
+[PEP 3100](https://www.python.org/dev/peps/pep-3100/#atomic-types):
 
 * Make all strings be Unicode, and have a separate bytes() type. The new
   string type will be called 'str'.
@@ -127,7 +127,7 @@ Python 3 is different: it imposes a much greater separation between the
 application code, while making it a bit harder to write code that works
 with system boundaries where the distinction between binary and text data
 can be substantially less clear. I've written in more detail
-[elsewhere](http://python-notes.curiousefficiency.org/en/latest/python3/questions_and_answers.html#what-actually-changed-in-the-text-model-between-python-2-and-python-3)
+[elsewhere](https://python-notes.curiousefficiency.org/en/latest/python3/questions_and_answers.html#what-actually-changed-in-the-text-model-between-python-2-and-python-3)
 regarding what actually changed in the text model between Python 2 and
 Python 3.
 

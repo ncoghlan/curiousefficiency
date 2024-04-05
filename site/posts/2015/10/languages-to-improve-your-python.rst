@@ -122,7 +122,7 @@ look.
 .. _Objective-C: https://en.wikipedia.org/wiki/Objective-C
 .. _Swift: https://en.wikipedia.org/wiki/Swift_%28programming_language%29
 .. _Processing: https://en.wikipedia.org/wiki/Processing_%28programming_language%29
-.. _annual ranking: http://spectrum.ieee.org/static/interactive-the-top-programming-languages-2015
+.. _annual ranking: https://spectrum.ieee.org/static/interactive-the-top-programming-languages-2015
 
 
 Procedural programming: C, Rust, Cython
@@ -232,7 +232,7 @@ modules, and class-based views in the ``Django`` web framework.
 .. _J++: https://en.wikipedia.org/wiki/Visual_J%2B%2B
 .. _Eiffel: https://en.wikipedia.org/wiki/Eiffel_%28programming_language%29
 .. _mono: https://en.wikipedia.org/wiki/Mono_%28software%29
-.. _open source ecosystem strategy: http://radar.oreilly.com/2015/06/net-open-source.html
+.. _open source ecosystem strategy: https://radar.oreilly.com/2015/06/net-open-source.html
 
 
 Object-oriented C derivatives: C++, D
@@ -308,7 +308,7 @@ and Nvidia's CUDA, and distributed data processing through ecosystems like
 .. _OpenCL: https://en.wikipedia.org/wiki/OpenCL
 .. _CUDA: https://en.wikipedia.org/wiki/CUDA
 .. _Apache Spark: https://spark.apache.org/
-.. _Blaze: http://blaze.pydata.org/
+.. _Blaze: https://blaze.pydata.org/
 
 
 Statistical data analysis: R
@@ -325,7 +325,7 @@ manipulation library and the `seaborn`_ statistical visualisation library.
 
 .. _R: https://en.wikipedia.org/wiki/R_%28programming_language%29
 .. _pandas: https://en.wikipedia.org/wiki/Pandas_%28software%29
-.. _seaborn: http://stanford.edu/~mwaskom/software/seaborn/
+.. _seaborn: https://stanford.edu/~mwaskom/software/seaborn/
 
 
 Computational pipeline modelling: Haskell, Scala, Clojure, F#
@@ -432,7 +432,7 @@ and the event handling loops in GUI frameworks.
 .. _Elixir: https://en.wikipedia.org/wiki/Elixir_%28programming_language%29
 .. _Twisted: https://en.wikipedia.org/wiki/Twisted_%28software%29
 .. _Tornado: https://en.wikipedia.org/wiki/Tornado_%28web_server%29
-.. _channels: http://channels.readthedocs.org/en/latest/concepts.html
+.. _channels: https://channels.readthedocs.org/en/latest/concepts.html
 
 
 Gradual typing: TypeScript
@@ -466,10 +466,10 @@ TypeScript, and as an entirely optional static analysis task for Python's type
 hinting).
 
 .. _TypeScript: https://en.wikipedia.org/wiki/TypeScript
-.. _DefinitelyTyped: http://definitelytyped.org/
+.. _DefinitelyTyped: https://definitelytyped.org/
 .. _PyCon Australia presentation: https://www.youtube.com/watch?v=_PPQLeimyOM
 .. _typeshed: https://github.com/python/typeshed
-.. _mypy: http://mypy-lang.org/
+.. _mypy: https://mypy-lang.org/
 
 
 Dynamic metaprogramming: Hy, Ruby
@@ -507,7 +507,7 @@ enumeration types and runtime evaluation of gradual typing expressions)
 .. _Hy: https://en.wikipedia.org/wiki/Hy
 .. _Ruby: https://en.wikipedia.org/wiki/Ruby_%28programming_language%29
 .. _monkeypatching: https://en.wikipedia.org/wiki/Monkey_patch
-.. _wrapt: http://wrapt.readthedocs.org/en/latest/
+.. _wrapt: https://wrapt.readthedocs.org/en/latest/
 
 
 Pragmatic problem solving: Lua, PHP, Perl
@@ -560,7 +560,7 @@ In particular, it may provide insight into the significance of projects like
 institutional investment in the Python ecosystem.
 
 .. _Lua: https://en.wikipedia.org/wiki/Lua_%28programming_language%29
-.. _LuaJIT FFI: http://luajit.org/ext_ffi.html
+.. _LuaJIT FFI: https://luajit.org/ext_ffi.html
 .. _cffi: https://cffi.readthedocs.org/en/latest/#goals
 .. _PHP: https://en.wikipedia.org/wiki/PHP
 .. _LAMP stack: https://en.wikipedia.org/wiki/LAMP_%28software_bundle%29
@@ -569,12 +569,12 @@ institutional investment in the Python ecosystem.
 .. _MediaWiki: https://en.wikipedia.org/wiki/MediaWiki
 .. _Ushahidi: https://en.wikipedia.org/wiki/Ushahidi
 .. _Perl: https://en.wikipedia.org/wiki/Perl
-.. _CKAN: http://ckan.org/instances/#
+.. _CKAN: https://ckan.org/instances/#
 .. _OpenStack NFV: https://wiki.openstack.org/wiki/TelcoWorkingGroup
 .. _Blender: https://www.blender.org/
-.. _SciPy: http://www.scipy.org/
-.. _OpenMDAO: http://openmdao.org/
-.. _PyGMO: http://esa.github.io/pygmo/
+.. _SciPy: https://www.scipy.org/
+.. _OpenMDAO: https://openmdao.org/
+.. _PyGMO: https://esa.github.io/pygmo/
 .. _PyCUDA: https://developer.nvidia.com/pycuda
 .. _Raspberry Pi Foundation: https://www.raspberrypi.org/
 .. _wide range of commercial organisations: https://us.pycon.org/2015/sponsors/

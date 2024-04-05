@@ -25,7 +25,7 @@ research and development activities.
 As a result, I've escalated this legislation for review by the legal teams
 at various open source companies and organisations, with a view to making
 formal submissions to the
-[public consultation process](http://www.defence.gov.au/deco/Consultation.asp)
+[public consultation process](https://www.defence.gov.au/deco/Consultation.asp)
 that is open until January 30th (ready for bills to be submitted for
 consideration to federal parliament on February 23rd).
 
@@ -41,13 +41,13 @@ What *not* to worry about
 
 To folks encountering this kind of legislation for the first time, the
 sheer scope of the
-[Defence and Strategic Goods List](http://www.defence.gov.au/deco/DSGL.asp)
+[Defence and Strategic Goods List](https://www.defence.gov.au/deco/DSGL.asp)
 can seem absolutely terrifying. This was very clear to me from some of the
 questions various academics in the room were asking.
 
 On this particular point, I can only say: *"Don't panic"*. This isn't a
 unique-to-Australia list, it's backed by a treaty called the
-[Wassenaar Arrangement](http://www.wassenaar.org/) - the DSGL represents
+[Wassenaar Arrangement](https://www.wassenaar.org/) - the DSGL represents
 part of the implementation of that arrangement into Australian law.
 
 When the laws implementing that arrangement are well drafted, everyone outside
@@ -177,7 +177,7 @@ What industry and academia can do about it
 
 While it's very short notice, the main thing industry and academia can do
 is to file formal submissions with DECO as described in their overview of
-the [public consultation process](http://www.defence.gov.au/deco/Consultation.asp).
+the [public consultation process](https://www.defence.gov.au/deco/Consultation.asp).
 
 There are three main things to be addressed on that front:
 

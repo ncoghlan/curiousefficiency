@@ -65,7 +65,7 @@ pressure to actually get the situation addressed properly.
 
 Beyond Red Hat Enterprise Linux, Red Hat's portfolio also includes
 both the [OpenShift](https://www.openshift.com/) Platform-as-a-Service
-offering and the [Feed Henry](http://www.feedhenry.com/) Mobile Application
+offering and the [Feed Henry](https://www.feedhenry.com/) Mobile Application
 Platform. For many organisations looking to adopt an iterative approach to
 web service development, those are going to be a better fit than deploying
 directly to Red Hat Enterprise Linux and building a custom web service
@@ -83,12 +83,12 @@ without administrative access.
 
 At Strata 2015, Continuum's Python distribution not only featured in a
 combined announcement regarding on-premise deployment of [Anaconda Cluster
-together with Red Hat Storage](http://redhatstorage.redhat.com/2015/02/17/deploying-pyspark-on-red-hat-storage-glusterfs/),
+together with Red Hat Storage](https://redhatstorage.redhat.com/2015/02/17/deploying-pyspark-on-red-hat-storage-glusterfs/),
 but also in Microsoft's announcement of Python support in the
-[Azure Machine Learning service](http://continuum.io/blog/azureml)
+[Azure Machine Learning service](https://continuum.io/blog/azureml)
 
 For users that don't need a full scientific Python distribution, Continuum
-Analytics also offer [miniconda](http://continuum.io/downloads) which just
+Analytics also offer [miniconda](https://continuum.io/downloads) which just
 provides a Python runtime and the conda package manager, providing end users
 with a cross-platform way to obtain and manage multiple Python runtimes
 without needing administrative access to their systems.
@@ -108,10 +108,10 @@ Fedora project, which is intended primarily to drive innovation within the
 operating system layer itself).
 
 CentOS 7 was originally released in
-[July 2014](http://seven.centos.org/2014/07/release-announcement-for-centos-7x86_64/),
+[July 2014](https://seven.centos.org/2014/07/release-announcement-for-centos-7x86_64/),
 and the latest release, CentOS 7(1503), was just published (as the name
 suggests) in
-[March 2015](http://seven.centos.org/2015/03/centos-7-1503-is-released/)).
+[March 2015](https://seven.centos.org/2015/03/centos-7-1503-is-released/)).
 
 For CentOS and other RHEL derivatives, the upstream project for Red Hat
 Software Collections is hosted at
@@ -165,7 +165,7 @@ programs to cover the certification of Docker containers in addition to
 other forms of Linux application deployment.
 
 Even more recently, the
-[Red Hat Container Development Kit](http://connect.redhat.com/zones/containers)
+[Red Hat Container Development Kit](https://connect.redhat.com/zones/containers)
 was introduced to help streamline that certification process for Red Hat
 Independent Software Vendor Partners.
 
@@ -187,5 +187,5 @@ stacks means they don't need this long term platform support for themselves,
 so the folks that are seeking it should be expected to pay for it to happen.
 (Apparent exceptions like CentOS aren't exceptions at all: sustaining
 engineering on CentOS is instead a beneficial community byproduct of the
-[paid sustaining engineering](http://crunchtools.com/deep-dive-rebase-vs-backport/)
+[paid sustaining engineering](https://crunchtools.com/deep-dive-rebase-vs-backport/)
 that goes into Red Hat Enterprise Linux).

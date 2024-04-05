@@ -12,7 +12,7 @@ on python-dev prompted
 the current state of the ongoing industry wide transition from bilingual to
 multilingual programming as it relates to Python's cross-platform support. It
 also relates to the reasons why Python 3 turned out to be
-[more disruptive](http://www.curiousefficiency.org/posts/2014/08/python-4000.html)
+[more disruptive](https://www.curiousefficiency.org/posts/2014/08/python-4000.html)
 than the core development team initially expected.
 
 A good starting point for anyone interested in exploring this topic further
@@ -202,7 +202,7 @@ limited to 8-bit ASCII compatible encodings for text processing.
 Python 2.x was still primarily a product of the bilingual era, but added
 multilingual support as an optional addon, in the form of the `unicode`
 type and support for a wide variety of text encodings.
-[PEP 100](http://www.python.org/dev/peps/pep-0100/) goes into the many
+[PEP 100](https://www.python.org/dev/peps/pep-0100/) goes into the many
 technical details that needed to be covered in order to incorporate that
 feature. With Python 2, you *can* make multilingual programming work, but
 it requires an active decision on the part of the application developer,
@@ -263,7 +263,7 @@ serious problems.
 Python 3 still needs to deal with improperly encoded data however, so it
 provides a mechanism for arbitrary binary data to be "smuggled" through
 text strings in the Unicode Private Use Area. This feature was added by
-[PEP 383](http://www.python.org/dev/peps/pep-0383/) and is managed through
+[PEP 383](https://www.python.org/dev/peps/pep-0383/) and is managed through
 the `surrogateescape` error handler, which is used by default on most
 operating system interfaces. This recreates the old Python 2 behaviour of
 passing improperly encoded data through unchanged when dealing solely with
@@ -273,7 +273,7 @@ system provides several tools to deal with these files, and we're looking
 at adding a few more relevant convenience functions for Python 3.5.
 
 The underlying Unicode changes in Python 3 also made
-[PEP 393](http://www.python.org/dev/peps/pep-0393/) possible, which changed
+[PEP 393](https://www.python.org/dev/peps/pep-0393/) possible, which changed
 the way the CPython interpreter stores text internally. In Python 2, even
 pure ASCII strings would consume four bytes per code point on Linux systems.
 Using the "narrow build" option (as the Python 2 Windows builds from
@@ -310,7 +310,7 @@ For Python 3, the remaining challenges fall into a few areas:
 * adding back some features for working entirely in the binary domain that
   were removed in the original Python 3 transition due to an initial
   assessment that they were operations that only made sense on text data
-  ([PEP 361](http://www.python.org/dev/peps/pep-0361/) summary:
+  ([PEP 361](https://www.python.org/dev/peps/pep-0361/) summary:
   `bytes.__mod__` is coming back in Python 3.5 as a valid binary domain
   operation, `bytes.format` stays gone as an operation that only makes sense
   when working with actual text data)

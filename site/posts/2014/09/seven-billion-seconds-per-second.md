@@ -7,7 +7,7 @@
 .. type: text
 
 A couple of years ago, YouTube put together their
-["One hour per second"](http://www.onehourpersecond.com/) site, visualising
+["One hour per second"](https://www.onehourpersecond.com/) site, visualising
 the fact that for every second of time that elapses, an hour of video is
 uploaded to YouTube. Their
 [current statistics page](https://www.youtube.com/yt/press/statistics.html)

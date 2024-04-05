@@ -17,7 +17,7 @@ authentication, redirect handling, session management, and JSON request and
 response bodies enter the picture.
 
 It's tempting, and entirely understandable, to want to
-[chalk this difference](http://noamelf.com/2016/08/05/designing-pythonic-apis/)
+[chalk this difference](https://noamelf.com/2016/08/05/designing-pythonic-apis/)
 in ease of use up to `requests` being "Pythonic" (in 2016 terms), while `urllib`
 has now become un-Pythonic (despite being included in the standard library).
 

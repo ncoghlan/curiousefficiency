@@ -7,7 +7,7 @@
 .. type: text
 
 As reported in
-[Ars Technica](http://arstechnica.com/business/2015/01/linus-torvalds-on-why-he-isnt-nice-i-dont-care-about-you/),
+[Ars Technica](https://arstechnica.com/business/2015/01/linus-torvalds-on-why-he-isnt-nice-i-dont-care-about-you/),
 the ongoing efforts to promote diversity in open source communities came
 up once more during the plenary Q&A session with Linus Torvalds, Andrew Tridgell,
 Bdale Garbee and Rusty Russell.
@@ -238,10 +238,10 @@ If we instead decide we need to better educate ourselves, then there are
 plenty of resources available for us to do so. For folks just beginning to
 explore questions of systemic bias and defaulting to exclusivity,
 gender-based bias is a good one to start with, by perusing resources like the
-[Feminism 101](http://geekfeminism.wikia.com/wiki/Feminism_101) section on
+[Feminism 101](https://geekfeminism.wikia.com/wiki/Feminism_101) section on
 the Geek Feminism wiki, or (if we have the opportunity) attending an
 Ada Initiative
-[Ally Skills workshop](http://adainitiative.org/what-we-do/workshops-and-training/).
+[Ally Skills workshop](https://adainitiative.org/what-we-do/workshops-and-training/).
 
 And if we *do* acknowledge the importance of this work, then we can use our
 influence to help it continue, whether that's by sponsoring educational
@@ -301,10 +301,10 @@ depth, breadth, and hence quality, of our collective thinking.
 *Update 22 Jan, 2015: Minor typo and grammar fixes*
 
 *Update 19 Apr, 2016: This article is also available in
-[Russian](http://www.everycloudtech.com/abuse-is-not-ok),
-thanks to [Everycloud technologies](http://www.everycloudtech.com/)*
+[Russian](https://www.everycloudtech.com/abuse-is-not-ok),
+thanks to [Everycloud technologies](https://www.everycloudtech.com/)*
 
 
 *Update 1 Dec, 2016: This article is also available in
-[Estonian](http://www.autoteileprofi.de/science/2016/12/01/kuritarvitamises-toetajad-ei-ole-ok/),
+[Estonian](https://www.autoteileprofi.de/science/2016/12/01/kuritarvitamises-toetajad-ei-ole-ok/),
 thanks to Arija Liepkalnietis*
