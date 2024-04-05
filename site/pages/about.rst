@@ -12,7 +12,9 @@ The main portion of the site is generated via
 `Nikola <http://getnikola.com/>`__,
 hosted on `GitHub Pages <https://pages.github.com/>`__,
 and also under source control on
-`GitHub <https://github.com/ncoghlan/curiousefficiency/>`__.
+`GitHub <https://github.com/ncoghlan/curiousefficiency/>`__ (the repo layout is
+a bit odd, since the source code wasn't originally on GitHub, and the hosting
+moved to GitHub Pages first, with the source repository following much later).
 
 Python specific technical writing tends to end up on the
 `ReadTheDocs <http://readthedocs.org/>`__ powered
@@ -39,7 +41,7 @@ here. The original site blurb on Boredom & Laziness read as follows:
 "Curious Efficiency" is really just a nicer way of referring to the same
 concept.
 
-`This post <../../posts/2012/07/the-title-of-this-blog/>`__ goes into some
+`This post </posts/2012/07/the-title-of-this-blog/>`__ goes into some
 additional detail on the concepts that inspired the naming, both the original
 form, and the current more conventionally acceptable phrasing.
 
@@ -47,7 +49,7 @@ form, and the current more conventionally acceptable phrasing.
 About the author
 ----------------
 
-.. image:: ../../files/alyssa_ce_about_pic.jpg
+.. image:: /files/alyssa_ce_about_pic.jpg
    :align: right
 
 Alyssa is a CPython core developer, a Fellow of the Python Software Foundation,
