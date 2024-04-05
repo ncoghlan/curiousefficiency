@@ -4,15 +4,15 @@ About Curious Efficiency
 About the site
 --------------
 
-Curious Efficiency is the intermittently updated personal website of Nicholas
+Curious Efficiency is the intermittently updated personal website of Alyssa
 Coghlan, CPython core developer, PSF Fellow, software development toolsmith,
 cognitive science dabbler, and cynical idealist.
 
 The main portion of the site is generated via
 `Nikola <http://getnikola.com/>`__,
 hosted on `GitHub Pages <https://pages.github.com/>`__,
-and under source control on
-`BitBucket <https://bitbucket.org/ncoghlan/curiousefficiency/>`__.
+and also under source control on
+`GitHub <https://github.com/ncoghlan/curiousefficiency/>`__.
 
 Python specific technical writing tends to end up on the
 `ReadTheDocs <http://readthedocs.org/>`__ powered
@@ -50,10 +50,17 @@ About the author
 .. image:: ../files/pycon2011_language_summit_cropped.jpg
    :align: right
 
-Nick is a CPython core developer, a Fellow of the Python Software Foundation,
+Alyssa is a CPython core developer, a Fellow of the Python Software Foundation,
 and the founder of the PyCon Australia Education Seminar.
 
-He is the author or co-author of several accepted Python Enhancement Proposals
+Together with Guido van Rossum, Brett Cannon, Barry Warsaw, and Carol Willing,
+Alyssa served on the inaugural 2019 Python Steering Council. Alyssa's primary
+activity while on the Steering Council was managing the transition of the
+standing PyPA PEP delegations from Guido's position as BDFL to instead be
+explicitly recorded `standing delegations from the Steering Council
+<https://github.com/python/steering-council/blob/main/process/standing-delegations.md>`_.
+
+She is the author or co-author of several accepted Python Enhancement Proposals
 (including PEP 453, which saw the ``pip`` installer bundled with Python 3.4+,
 PEP 466, which saw several key Python 3 network security enhancements backported
 to the Python 2.7 series, and PEP 538, which updated CPython to coerce the
@@ -61,68 +68,38 @@ legacy ASCII-based C locale to a suitable UTF-8 based locale when one is
 available), and has also accepted a number of PEPs on Guido van Rossum's behalf
 as BDFL-Delegate.
 
-Nick is currently the BDFL-Delegate for most packaging related PEPs, serving
-as the primary liaison between the CPython core development team and the
-`Python Packaging Authority <https://www.pypa.io/>`__. His own efforts in the
-packaging space are focused primarily on the
-`Python Packaging User Guide <https://packaging.python.org>`_, and the
-`pipenv <https://packaging.python.org/tutorials/managing-dependencies/>`_
-application dependency management project.
+Alyssa changed her name from Nicholas (Nick) Coghlan in August 2023, so
+articles, videos, and archived posts from previous years will still use her
+birth name. She mostly goes by Alyssa, but will also answer to Lyse and Nic (now
+the short form of her middle name rather than her first name).
 
-At the PyCon US 2013 language summit, Nick successfully argued for updates to
+Alyssa was the default BDFL-Delegate for packaging related PEPs for several years,
+serving as the primary liaison between the CPython core development team and the
+`Python Packaging Authority <https://www.pypa.io/>`__. Her own efforts in the
+packaging space were focused primarily on the
+`Python Packaging User Guide <https://packaging.python.org>`_ and facilitating
+standardisation of interfaces between different tools to allow volunteers to
+collaborate more effectively across a range of packaging projects.
+
+At the PyCon US 2013 language summit, Alyssa successfully argued for updates to
 the Python Enhancement Proposal process (described in PEP 1) that allowed
 BDFL-Delegates to approve PEPs that don't affect the language definition or
 the standard library directly on the relevant mailing lists (without needing
 to rehash the discussions on python-dev).
 
-In addition to CPython, the PSF, the PyPA, and the PSF's
-`Packaging Working Group <https://wiki.python.org/psf/PackagingWG>`__,
-other projects & programs of particular current interest include:
+Beyond the Python open source world, Alyssa spent the first decade of her career
+with Boeing Defence Australia working on high frequency radio communication for
+the Australian Defence Force (including network contact and security protocols),
+several years working on hardware integration test automation and other projects
+for Red Hat and (most recently) several years with Tritium working to support
+remote operation and management of Tritium's EV DC fast chargers using the Open
+Charge Point Protocol (OCPP). Her work at Tritium included being a leading
+member of the team that delivered 2020's world-first deployment of ISO15118's
+Plug-and-Charge payment protocol support to Ionity's high power EV charging
+network.
 
-* `Kubernetes <https://kubernetes.io/>`__: a Google created open source
-  application deployment platform, designed to ease adoption for folks
-  accustomed to managing their own Linux servers directly, and supported across
-  all major public clouds. I'm interested in this as I believe it addresses many
-  of the vendor lock-in concerns otherwise raised against public cloud adoption
-  (and unlike previous efforts in that space, it has support from the major
-  public cloud vendors themselves).
-* `OpenShift <https://www.openshift.org/>`__: Red Hat's fully open source
-  Kubernetes-based Platform-as-a-Service offering that provides tools to
-  handle automatic updates of deployed images when either application code
-  or the underlying base image changes. I'm interested in this as Red Hat are
-  veterans at selling to the legacy infrastructure crowd, and many of the "But
-  what about..." objections raised against plain Kubernetes already have
-  solutions built in to OpenShift.
-* `Zappa <https://www.zappa.io/>`__: a toolkit for running Python WSGI
-  applications in AWS Lambda behind AWS API Gateway. I'm interested in this
-  as I think it's the level of "Don't bother me with irrelevant infrastructure
-  details" that Kubernetes et al should be aspiring to, but they're not there
-  yet.
-* `Software Collections <https://www.softwarecollections.org/en/>`__: a
-  Red Hat supported approach to deploying platform components (such as language
-  runtimes, database engines and web servers) on Linux, such that end user
-  applications can use newer versions without interfering with the versions
-  integrated directly into the underlying operating system distribution. I'm
-  interested in this as "We have to use the system Python in some ancient RHEL
-  version and aren't allowed to install packages from PyPI" is one of the
-  largest drags on innovation in the Python ecosystem, and Software
-  Collections are the main mechanism that Red Hat uses to offer newer Python
-  runtimes to their customers.
-* `Zappa <https://www.zappa.io/>`__: a toolkit for running Python WSGI
-  applications in AWS Lambda behind AWS API Gateway. I'm interested in this
-  as I think it's the level of "Don't bother me with irrelevant infrastructure
-  details" that Kubernetes et al should be aspiring to, but they're not there
-  yet.
-* `Conda <https://conda.io/docs/>`__: a cross-platform environment manager
-  created initially for the Python data science community. Its language
-  independent design means it can not only manage the installation of Python
-  packages, but also manage the Python runtime itself, external binary
-  dependencies written in C/C++/FORTRAN/etc, and data analysis components
-  written in other languages entirely (such as R and Julia).
-* `Fedora Scientific <https://labs.fedoraproject.org/en/scientific/>`__: a
-  KDE-based Fedora desktop distribution with a range of science and data
-  analysis applications pre-installed, including IPython Notebook.
-
+Alyssa is currently enjoying an extended sabbatical while pursuing her Masters
+of Cybersecurity as a full-time student.
 
 Selected articles, presentations and interviews
 -----------------------------------------------

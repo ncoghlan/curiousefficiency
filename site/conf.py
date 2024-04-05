@@ -9,7 +9,7 @@ import time
 
 
 # Data about this site
-BLOG_AUTHOR = "Nick Coghlan"
+BLOG_AUTHOR = "Alyssa Coghlan"
 BLOG_TITLE = "Curious Efficiency"
 # This is the main URL for your site. It will be used
 # in a prominent link
