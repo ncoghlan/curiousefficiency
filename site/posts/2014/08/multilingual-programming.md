@@ -12,7 +12,7 @@ on python-dev prompted
 the current state of the ongoing industry wide transition from bilingual to
 multilingual programming as it relates to Python's cross-platform support. It
 also relates to the reasons why Python 3 turned out to be
-[more disruptive](https://www.curiousefficiency.org/posts/2014/08/python-4000.html)
+[more disruptive](/posts/2014/08/python-4000.html)
 than the core development team initially expected.
 
 A good starting point for anyone interested in exploring this topic further
