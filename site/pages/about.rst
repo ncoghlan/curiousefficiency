@@ -154,8 +154,8 @@ Selected Python related articles and presentation reviews:
 * `Considering Python's target audience </posts/2017/10/considering-pythons-target-audience/>`__
 * `The Python Packaging Ecosystem (September 2016) </posts/2016/09/python-packaging-ecosystem/>`__
 * `27 Languages to Improve Your Python </posts/2015/10/languages-to-improve-your-python.html#broadening-our-horizons>`__
-* `The Transition to Multilingual Programming <https://developerblog.redhat.com/2014/09/09/transition-to-multilingual-programming-python/>`__
-* `Why Python 4.0 won't be like Python 3.0 <https://developerblog.redhat.com/2014/09/17/why-python-4-0-wont-be-like-python-3-0/>`__
+* `The Transition to Multilingual Programming <https://developers.redhat.com/blog/2014/09/09/transition-to-multilingual-programming-python/>`__
+* `Why Python 4.0 won't be like Python 3.0 <https://developers.redhat.com/blog/2014/09/17/why-python-4-0-wont-be-like-python-3-0/>`__
 * `Python 3 Q & A <https://python-notes.curiousefficiency.org/en/latest/python3/questions_and_answers.html>`__
 * `Linux Weekly News article <https://lwn.net/Articles/580399/>`__ on my Python Packaging 2.0 presentation at linux.conf.au 2014
 * `Justifying Python language changes </posts/2011/02/justifying-python-language-changes/>`__
