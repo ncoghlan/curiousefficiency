@@ -2,6 +2,7 @@ site/output
 site/cache
 site/Guardfile
 site/plugins
+site/state_data.json
 .doit.db
 *.py[co]
 .vscode/
