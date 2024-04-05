@@ -39,7 +39,7 @@ here. The original site blurb on Boredom & Laziness read as follows:
 "Curious Efficiency" is really just a nicer way of referring to the same
 concept.
 
-`This post <../posts/2012/07/the-title-of-this-blog.html>`__ goes into some
+`This post <../../posts/2012/07/the-title-of-this-blog/>`__ goes into some
 additional detail on the concepts that inspired the naming, both the original
 form, and the current more conventionally acceptable phrasing.
 
@@ -47,7 +47,7 @@ form, and the current more conventionally acceptable phrasing.
 About the author
 ----------------
 
-.. image:: ../files/alyssa_profile_pic.jpg
+.. image:: ../../files/alyssa_profile_pic.jpg
    :align: right
 
 Alyssa is a CPython core developer, a Fellow of the Python Software Foundation,
@@ -149,32 +149,32 @@ Selected Python related presentations (video links):
 
 Selected Python related articles and presentation reviews:
 
-* `Considering Python's target audience <https://www.curiousefficiency.org/posts/2017/10/considering-pythons-target-audience.html>`__
-* `The Python Packaging Ecosystem (September 2016) <https://www.curiousefficiency.org/posts/2016/09/python-packaging-ecosystem.html>`__
+* `Considering Python's target audience <https://www.curiousefficiency.org/posts/2017/10/considering-pythons-target-audience/>`__
+* `The Python Packaging Ecosystem (September 2016) <https://www.curiousefficiency.org/posts/2016/09/python-packaging-ecosystem/>`__
 * `27 Languages to Improve Your Python <https://www.curiousefficiency.org/posts/2015/10/languages-to-improve-your-python.html#broadening-our-horizons>`__
 * `The Transition to Multilingual Programming <https://developerblog.redhat.com/2014/09/09/transition-to-multilingual-programming-python/>`__
 * `Why Python 4.0 won't be like Python 3.0 <https://developerblog.redhat.com/2014/09/17/why-python-4-0-wont-be-like-python-3-0/>`__
 * `Python 3 Q & A <http://python-notes.curiousefficiency.org/en/latest/python3/questions_and_answers.html>`__
 * `Linux Weekly News article <http://lwn.net/Articles/580399/>`__ on my Python Packaging 2.0 presentation at linux.conf.au 2014
-* `Justifying Python language changes <https://www.curiousefficiency.org/posts/2011/02/justifying-python-language-changes.html>`__
+* `Justifying Python language changes <https://www.curiousefficiency.org/posts/2011/02/justifying-python-language-changes/>`__
 
 Selected software design, development and deployment related presentations and articles:
 
 * `Front-end Integration Testing with Splinter <http://pyvideo.org/pycon-au-2017/front-end-integration-testing-with-splinter.html>`__ (PyCon Australia 2017)
 * `Tracking package updates with release-monitoring.org <https://lwn.net/Articles/711906/>`__ (LWN article on my linux.conf.au 2017 presentation)
-* `What problem does it solve? <https://www.curiousefficiency.org/posts/2016/08/what-problem-does-it-solve.html>`__ (on constructively criticising API designs)
-* `Musings on the culture of python-dev <http://www.curiousefficiency.org/posts/2011/04/musings-on-culture-of-python-dev.html>`__
-* `Status quo wins a stalemate <http://www.curiousefficiency.org/posts/2011/02/status-quo-wins-stalemate.html>`__
-* `Scripting Languages and Suitable Complexity <http://www.curiousefficiency.org/posts/2011/08/scripting-languages-and-suitable.html>`__
+* `What problem does it solve? <https://www.curiousefficiency.org/posts/2016/08/what-problem-does-it-solve/>`__ (on constructively criticising API designs)
+* `Musings on the culture of python-dev <http://www.curiousefficiency.org/posts/2011/04/musings-on-culture-of-python-dev/>`__
+* `Status quo wins a stalemate <http://www.curiousefficiency.org/posts/2011/02/status-quo-wins-stalemate/>`__
+* `Scripting Languages and Suitable Complexity <http://www.curiousefficiency.org/posts/2011/08/scripting-languages-and-suitable/>`__
 * `Path Dependent Development <http://pyvideo.org/video/1625/path-dependent-development-why-on-earth-are-you>`__ (PyCon Australia 2012)
 * `Full Stack Integration Testing with Beaker <https://www.youtube.com/watch?v=tjUjdBm-Mqw>`__ (linux.conf.au 2014)
 
 Selected community management related articles and interviews:
 
-* `27 Languages to Improve Your Python (introduction) <https://www.curiousefficiency.org/posts/2015/10/languages-to-improve-your-python.html>`__
+* `27 Languages to Improve Your Python (introduction) <https://www.curiousefficiency.org/posts/2015/10/languages-to-improve-your-python/>`__
 * `The Quid Pro Quo of Open Infrastructure <https://community.redhat.com/blog/2015/02/the-quid-pro-quo-of-open-infrastructure/>`__
-* `Abusing Contributors is not OK <http://www.curiousefficiency.org/posts/2015/01/abuse-is-not-ok.html>`__ (reflecting on some comments from Linus Torvalds during his plenary session at linux.conf.au 2015)
-* `Effective communication, brain hacking and diversity <http://www.curiousefficiency.org/posts/2011/07/effective-communication-brain-hacking.html>`__
+* `Abusing Contributors is not OK <http://www.curiousefficiency.org/posts/2015/01/abuse-is-not-ok/>`__ (reflecting on some comments from Linus Torvalds during his plenary session at linux.conf.au 2015)
+* `Effective communication, brain hacking and diversity <http://www.curiousefficiency.org/posts/2011/07/effective-communication-brain-hacking/>`__
 * `opensource.com interview <http://opensource.com/business/14/7/new-membership-process-python-software-foundation>`__ on my joining the PSF board of directors
 
 Podcast appearances (in reverse chronological order):
