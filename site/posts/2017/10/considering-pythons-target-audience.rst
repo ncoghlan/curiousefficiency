@@ -12,7 +12,7 @@
 
 
 Several years ago, I
-`highlighted <https://www.curiousefficiency.org/posts/2011/04/musings-on-culture-of-python-dev/>`__
+`highlighted </posts/2011/04/musings-on-culture-of-python-dev/>`__
 "CPython moves both too fast and too slowly" as one of the more common causes
 of conflict both within the python-dev mailing list, as well as between the
 active CPython core developers and folks that decide that participating in
@@ -121,7 +121,7 @@ new software features and versions):
     adapters)
   * the standard library itself represents the baseline "world according to
     Python" (and that's an
-    `incredibly complex <https://www.curiousefficiency.org/posts/2015/10/languages-to-improve-your-python.html#broadening-our-horizons>`__
+    `incredibly complex </posts/2015/10/languages-to-improve-your-python.html#broadening-our-horizons>`__
     world view)
 
 
@@ -224,7 +224,7 @@ developers themselves need that, or if somebody is paying them for the
 inconvenience. This is similar to my view on whether or not volunteer-driven
 projects should support older commercial LTS Python releases for free when it's
 a hassle for them to do: I `don't think they should
-<https://www.curiousefficiency.org/posts/2015/04/stop-supporting-python26/>`__,
+</posts/2015/04/stop-supporting-python26/>`__,
 as I expect most such demands to be stemming from poorly managed institutional
 inertia, rather than from genuine need (and if the need *is* genuine, then it
 should instead be possible to find some means of paying to have it addressed).
@@ -236,7 +236,7 @@ in the original 2011 article linked above, as well as in Python 3 Q & A answers
 `here <https://python-notes.curiousefficiency.org/en/latest/python3/questions_and_answers.html#doesn-t-this-make-python-look-like-an-immature-and-unstable-platform>`__,
 and `here <https://python-notes.curiousefficiency.org/en/latest/python3/questions_and_answers.html#what-about-insert-other-shiny-new-feature-here>`__,
 and to a lesser degree in last year's article on the
-`Python Packaging Ecosystem <https://www.curiousefficiency.org/posts/2016/09/python-packaging-ecosystem/>`__),
+`Python Packaging Ecosystem </posts/2016/09/python-packaging-ecosystem/>`__),
 I've never really attempted to directly explain the impact it has on the standard
 library design process.
 
