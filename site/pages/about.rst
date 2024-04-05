@@ -47,7 +47,7 @@ form, and the current more conventionally acceptable phrasing.
 About the author
 ----------------
 
-.. image:: ../files/pycon2011_language_summit_cropped.jpg
+.. image:: ../files/alyssa_profile_pic.jpg
    :align: right
 
 Alyssa is a CPython core developer, a Fellow of the Python Software Foundation,

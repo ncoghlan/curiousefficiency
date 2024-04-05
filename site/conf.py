@@ -335,8 +335,8 @@ DEPLOY_COMMANDS = {
     u'publish': [
         u"""pushd ~/devel/ncoghlan.github.io &&
             git add . &&
-            git commit -m "$_NIKOLA_DEPLOY_MSG" &&
-            git push
+            git commit -m "Deployment from local site build" &&
+            git push &&
             popd
         """,
     ],
