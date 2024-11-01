@@ -8,7 +8,7 @@
 .. type: text
 
 This is a follow-on from my
-[previous post](http://www.curiousefficiency.org/posts/2015/07/asyncio-background-calls.html)
+[previous post](/posts/2015/07/asyncio-background-calls.html)
 on Python 3.5's new `async`/`await` syntax. Rather than the simple background
 timers used in the original post, this one will look at the impact native
 coroutine support has on the TCP echo client and server examples from the

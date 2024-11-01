@@ -14,7 +14,7 @@ The pitch
 
 
 <div style="float: right">
-  <a href="http://www.oreilly.com/programming/free/python-in-education.csp">
+  <a href="https://www.oreilly.com/programming/free/python-in-education.csp">
     <img src="/files/python-in-education-cover.gif"
          alt="Python in Education cover" />
    </a>

@@ -63,7 +63,7 @@ integrating new Python level dependencies into Beaker's RPM based development
 and deployment model. Getting actively involved in tackling these problems on
 the Python upstream side of things then led to also getting more actively
 involved in addressing them on the
-`Red Hat downstream side <http://www.slideshare.net/ncoghlan_dev/developing-in-python-on-red-hat-platforms-devnation-2016>`__.
+`Red Hat downstream side <https://www.slideshare.net/ncoghlan_dev/developing-in-python-on-red-hat-platforms-devnation-2016>`__.
 
 
 The key conundrum

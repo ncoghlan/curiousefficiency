@@ -22,7 +22,7 @@ certain aspects of the latter's commercialisation efforts started alienating
 several members of their user and developer community)
 
 Tymoteusz Jankowski (a contributor to Allegro Group's open source data centre
-inventory management system, [Ralph](http://ralph.allegrogroup.com/)), has
+inventory management system, [Ralph](https://ralph.allegrogroup.com/)), has
 already started looking at the steps that might be involved in integrating a
 Kallithea instance into the PSF's Salt based
 [infrastructure automation](https://github.com/xliiv/psf-salt/tree/kallithea).
@@ -45,7 +45,7 @@ That means tackling two particular problems:
 For the first problem, I plan to rely on Vagrant and Docker, while for the
 second I'll be relying on the free tier in Red Hat's OpenShift Online
 service. Unfortunately, while the
-[next generation](http://www.openshift.org/) of OpenShift will support Docker
+[next generation](https://www.openshift.org/) of OpenShift will support Docker
 images natively, for the time being, I need to tackle these as two separate
 problems, as there aren't any existing Docker based services I'm aware of
 with a free tier that is similarly suited to the task of sharing development
@@ -168,7 +168,7 @@ to installing Kallithea and its dependencies.
 
 However, that still didn't take long, and completed without errors, so I now
 have my own Kallithea instance
-[up and running](http://kallithea-ncoghlan.rhcloud.com/).
+[up and running](https://kallithea-ncoghlan.rhcloud.com/).
 
 And no, the default admin credentials created by the quickstart won't work
 anymore - I immediately logged in to the admin account to change them!
@@ -188,7 +188,7 @@ applications with mod_wsgi, that means listening to Graham Dumpleton (the
 author of mod_wsgi, currently working for New Relic).
 
 On that front, Graham has actually been
-[working on](http://blog.dscpl.com.au/2014/12/hosting-python-wsgi-applications-using.html)
+[working on](https://blog.dscpl.com.au/2014/12/hosting-python-wsgi-applications-using.html)
 creating a set of Debian based
 [mod_wsgi Docker images](https://registry.hub.docker.com/u/grahamdumpleton/mod-wsgi-docker/)
 that Python developers can use, rather than having to build their own from
