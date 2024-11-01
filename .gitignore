@@ -6,3 +6,5 @@ site/state_data.json
 .doit.db
 *.py[co]
 .vscode/
+.venv/
+.pdm-*
