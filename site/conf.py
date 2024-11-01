@@ -129,6 +129,13 @@ COMPILERS = {
         "html": ('.html', '.htm')
         }
 
+MARKDOWN_EXTENSIONS = [
+    "fenced_code",
+    "codehilite",
+    "extra",
+    "markdown.extensions.meta"
+]
+METADATA_FORMAT = "Pelican"
 
 # Create by default posts in one file format?
 # Set to False for two-file posts, with separate metadata.
@@ -700,4 +707,4 @@ FEED_TEASERS = False
 # Put in global_context things you want available on all your templates.
 # It can be anything, data, functions, modules, etc.
 
-GLOBAL_CONTEXT = {}
+GLOBAL_CONTEXT : dict[str, object] = {}
