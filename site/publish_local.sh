@@ -9,7 +9,7 @@ script_dir="$(cd -- "$(dirname -- "$(readlink -f "${BASH_SOURCE[0]}")")" &> /dev
 
 pushd "$script_dir" || exit 1
 
-alias nikola="pdm run nikola"
-nikola build && nikola deploy && nikola deploy publish
+nikola="pdm run nikola"
+$nikola build && $nikola deploy && $nikola deploy publish
 
 popd || exit 1
