@@ -89,6 +89,10 @@ BDFL-Delegates to approve PEPs that don't affect the language definition or
 the standard library directly on the relevant mailing lists (without needing
 to rehash the discussions on python-dev).
 
+She is now the project lead for the
+`venvstacks <https://pypi.org/project/venvstacks/>`_ Python environment
+packaging and deployment utility.
+
 Beyond the Python open source world, Alyssa spent the first decade of her career
 with Boeing Defence Australia working on high frequency radio communication for
 the Australian Defence Force (including network contact and security protocols),
@@ -100,28 +104,36 @@ member of the team that delivered 2020's world-first deployment of ISO15118's
 Plug-and-Charge payment protocol support to Ionity's high power EV charging
 network.
 
-Alyssa is currently enjoying an extended sabbatical while pursuing her Masters
-of Cybersecurity as a full-time student.
+Alyssa is currently working for the `LM Studio <https://lmstudio.ai/>`_ team
+maintaining ``venvstacks`` and working on other Python-related projects,
+while also pursuing her Masters of Cybersecurity as a part-time student.
+
 
 Selected articles, presentations and interviews
 -----------------------------------------------
 
 Selected Python Enhancement Proposals:
 
-* PEP 338: `Executing modules as scripts <https://www.python.org/dev/peps/pep-0338/>`__ (aka "the -m switch")
-* PEP 343: `The "with" statement <https://www.python.org/dev/peps/pep-0343/>`__ (co-authored with Guido van Rossum)
-* PEP 366: `Main module explicit relative imports <https://www.python.org/dev/peps/pep-0366/>`__
-* PEP 394: `The "python" command on UNIX-like systems <https://www.python.org/dev/peps/pep-0394/>`__ (co-authored with Kerrick Staley)
-* PEP 414: `Explicit Unicode Literal for Python 3.3 <https://www.python.org/dev/peps/pep-0414/>`__ (co-authored with Armin Ronacher)
-* PEP 432 (Draft): `Simplifying the CPython interpreter startup sequence <https://www.python.org/dev/peps/pep-0432/>`__
-* PEP 453: `Bootstrapping pip in Python installations <https://www.python.org/dev/peps/pep-0453/>`__ (co-authored with Donald Stufft)
-* PEP 466: `Network Security Enhancements for Python 2.7.x <https://www.python.org/dev/peps/pep-0466/>`__
-* PEP 477: `Backport ensurepip to Python 2.7 <https://www.python.org/dev/peps/pep-0477/>`__ (co-authored with Donald Stufft)
-* PEP 489: `Multi-phase extension module initialisation <https://www.python.org/dev/peps/pep-0489/>`__ (co-authored with Petr Viktorin and Stefan Behnel)
-* PEP 493: `HTTPS verification migration tools for Python 2.7 <https://www.python.org/dev/peps/pep-0493/>`__ (co-authored with Robert Kuska and Marc-Andre Lemburg)
-* PEP 538: `Coercing the legacy C locale to a UTF-8 based locale <https://www.python.org/dev/peps/pep-0538/>`__
-* PEP 565: `Show DeprecationWarning in __main__ <https://www.python.org/dev/peps/pep-0565/>`__
-* PEP 558 (Draft): `Defined semantics for locals() <https://www.python.org/dev/peps/pep-0558/>`__
+* PEP 338: `Executing modules as scripts <https://peps.python.org/pep-0338/>`__ (aka "the -m switch")
+* PEP 343: `The "with" statement <https://peps.python.org/pep-0343/>`__ (co-authored with Guido van Rossum)
+* PEP 366: `Main module explicit relative imports <https://peps.python.org/pep-0366/>`__
+* PEP 394: `The "python" command on UNIX-like systems <https://peps.python.org/pep-0394/>`__ (co-authored with Kerrick Staley)
+* PEP 414: `Explicit Unicode Literal for Python 3.3 <https://peps.python.org/pep-0414/>`__ (co-authored with Armin Ronacher)
+* PEP 432 (superseded): `Simplifying the CPython interpreter startup sequence <https://peps.python.org/pep-0432/>`__
+* PEP 440: `Version Identification and Dependency Specification <https://peps.python.org/pep-0440/>`__ (co-authored with Donald Stufft)
+* PEP 453: `Bootstrapping pip in Python installations <https://peps.python.org/pep-0453/>`__ (co-authored with Donald Stufft)
+* PEP 466: `Network Security Enhancements for Python 2.7.x <https://peps.python.org/pep-0466/>`__
+* PEP 477: `Backport ensurepip to Python 2.7 <https://peps.python.org/pep-0477/>`__ (co-authored with Donald Stufft)
+* PEP 489: `Multi-phase extension module initialisation <https://peps.python.org/pep-0489/>`__ (co-authored with Petr Viktorin and Stefan Behnel)
+* PEP 493: `HTTPS verification migration tools for Python 2.7 <https://peps.python.org/pep-0493/>`__ (co-authored with Robert Kuska and Marc-Andre Lemburg)
+* PEP 501 (superseded): `General purpose template literal strings <https://peps.python.org/pep-0501//>`__ (co-authored with Nick Humrich)
+* PEP 538: `Coercing the legacy C locale to a UTF-8 based locale <https://peps.python.org/pep-0538/>`__
+* PEP 565: `Show DeprecationWarning in __main__ <https://peps.python.org/pep-0565/>`__
+* PEP 558 (superseded): `Defined semantics for locals() <https://peps.python.org/pep-0558/>`__
+* PEP 573: `Module State Access from C Extension Methods <https://peps.python.org/pep-0573/>`__ (co-authored with Petr Viktorin, Eric Snow, and Marcel Plch)
+* PEP 587: `Python Initialization Configuration <https://peps.python.org/pep-0587/>`__ (co-authored with Victor Stinner)
+* PEP 628: `Add math.tau <https://peps.python.org/pep-0628/>`__
+
 
 Selected Python related presentations (video links):
 
