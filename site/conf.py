@@ -558,8 +558,9 @@ CONTENT_FOOTER = '{} - {} - {}'.format(COPYRIGHT_NOTICE,
 # To enable comments via Disqus, you need to create a forum at
 # http://disqus.com, and set DISQUS_FORUM to the short name you selected.
 # If you want to disable comments, set it to False.
-# Default is "nikolademo", used by the demo sites
-COMMENT_SYSTEM_ID = "boredomandlaziness"
+# Comments are disabled, pending reinjection as static HTML on old posts
+# COMMENT_SYSTEM_ID = "boredomandlaziness"
+COMMENT_SYSTEM_ID = False
 
 # Create index.html for story folders?
 # STORY_INDEX = False
